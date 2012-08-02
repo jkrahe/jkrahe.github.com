@@ -1,17 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
-	
-	
-	
-	 
+
 <html lang="en">
 <head>
- <link rel="Shortcut Icon" href="favicon.ico?289349832"> 
+	<link rel="Shortcut Icon" href="favicon.ico?289349832"> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Jimmy Krahe</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Aderinsola Akintilo">
 	<!-- Date: 2012-06-24 -->
+
+
+
 
 
 	<!-- CSS files -->
@@ -20,23 +20,30 @@
 	<link rel="stylesheet" href="css/nivo-gallery.css" type="text/css" media="screen" />
 
 
+
+
+	<!-- jQuery Calls -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 	<!--[if IE]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
 	<script src="scripts/modernizr-1.7.min.js"></script>
 
-<!-- Javascript Files -->
-<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
-<script type="text/javascript" src="js/shadowbox.js"></script>
-<script type="text/javascript">
-</script>
 
-<script type = "text/javascript">
-Shadowbox.init({
+
+
+
+
+	<!-- js Files -->
+	<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+	<script type="text/javascript" src="js/shadowbox.js"></script>
+	<script type="text/javascript">
+	</script>
+
+	<script type = "text/javascript">
+	Shadowbox.init({
 	handleOversize:     "drag",
 	displayNav:         true,
 	handleUnsupported:  "remove",
@@ -44,203 +51,214 @@ Shadowbox.init({
 	overlayOpacity: 0.8,
 	modal: false
 
-});
-// A really simple yet elegant fade in. 
+	});
+	// A really simple yet elegant fade in. 
+
+	// $(function(){
+	// 	 $('.page-header h1').fadeTo(0,0);
+	// 	 $('.navbar').fadeTo(0,0);
+	// 	 $('#gallery').fadeTo(0,0);
+	// 
+	// 	 $('.page-header h1').fadeTo(3000,1, function(){
+	// 	          $('.navbar').fadeTo(2000, 1, function(){
+	// 	            $('#gallery').fadeTo(2000,1);
+	// 	          });
+	// 	        });
+	// 	       
+	// });
+	</script>
+	
+	<script src="js/jquery.nivo.gallery.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('#gallery').nivoGallery();
+	});
+	</script>
 
 
-// $(function(){
-// 	 $('.page-header h1').fadeTo(0,0);
-// 	 $('.navbar').fadeTo(0,0);
-// 	 $('#gallery').fadeTo(0,0);
-// 
-// 	 $('.page-header h1').fadeTo(3000,1, function(){
-// 	          $('.navbar').fadeTo(2000, 1, function(){
-// 	            $('#gallery').fadeTo(2000,1);
-// 	          });
-// 	        });
-// 	       
-// });
-</script>
-
-
-<!-- Google Web Font -->
-<link href='http://fonts.googleapis.com/css?family=Bowlby+One|Francois+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<!-- Google Web Font -->
+	<link href='http://fonts.googleapis.com/css?family=Bowlby+One|Francois+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
 
-	<div class = "container">
-		<div class="page-header">
-			<h1>J. Krahe</h1>
-		</div>
-
-
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="container">
-					<ul class="nav">
-
-						<li class="active">
-							<a href="#">About</a>
-						</li>
-
-						<li>
-							<a id = "test" href="#">Resume
-								<!-- <i class="icon-envelope icon-white"> </i> -->
-							</a>
-						</li>
-
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- end of navbar -->
-		</div>
-
-
-
-		<h1>The Slideshow</h1>
-		<div id="gallery" class="nivoGallery">
-			<ul>
-				<li data-title="Lorem ipsum 1" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/characters/3.jpg" alt="" /></li>
-				<li data-title="Lorem ipsum 2" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/2.jpg" alt="" /></li>
-				<li data-title="Lorem ipsum 3" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/3.jpg" alt="" /></li>
-				<li data-title="Lorem ipsum 4" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/4.jpg" alt="" /></li>
-				<!-- <li data-type="html" data-title="Lorem ipsum 5" data-caption="dolor sit amet, consectetur adipiscing elit">
-								<h1>Heading</h1>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-							</li>
-							<li data-type="video" data-title="Vimeo Video">
-								<iframe src="http://player.vimeo.com/video/29950141?portrait=0&amp;color=ffffff" width="670" height="377" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
-							</li>
-							<li data-type="video" data-title="YouTube Video">
-								<iframe width="560" height="315" src="http://www.youtube.com/embed/72hTSFkYVAo?wmode=opaque" frameborder="0" allowfullscreen></iframe>
-							</li>
-							<li data-type="video" data-title="HTML5 Video">
-								<video width="700" height="390" controls="control" preload="none"> 
-									<source src="http://mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" /> 
-									<source src="http://mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" /> 
-									<source src="http://mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" /> 
-								</video>
-							</li> -->
-			</ul>
-		</div>
-
-		<script src="js/jquery.nivo.gallery.js"></script>
-		<script type="text/javascript">
-		$(function() {
-			$('#gallery').nivoGallery();
-		});
-		</script>
-		<!-- end of slideshow unit -->
-
-
-
-		<div class = "hero-unit">
-			<h1>The Gallery</h1>
-			<!-- for testing purposes -->
-			<!-- <img src="img/alien1/2.jpg" alt="" style="image-orientation: 90deg;"> -->
-			<p>Tagline</p>
-			<p>
-				<a class="btn btn-primary btn-large">
-					Learn more
-				</a>
-			</p>
-
-			<div class = "modal-footer">
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="img/alien/4.jpg" title="Clay Alien" rel="shadowbox[Alien]" class="thumbnail">
-								<img src="img/alien/4.jpg" alt="">
-							</a>
-							<a class ="hidden" href="img/alien/1.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
-							<a class ="hidden" href="img/alien/2.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
-							<a class ="hidden" href="img/alien/3.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="img/acneman/1.jpg" rel="shadowbox[Acneman]" title="Acneman!" class="thumbnail">
-								<img src="img/acneman/1.jpg" alt="">
-							</a>
-							<a class="hidden" href="img/acneman/2.jpg" title="Acneman!" rel="shadowbox[Acneman]" class="thumbnail"></a>
-
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="img/boy/1.jpg" rel="shadowbox[Boy_Portrait]" title="Boy Bust" class="thumbnail">
-								<img src="img/boy/1.jpg" alt="">
-							</a>
-							<a class="hidden" href="img/boy/2.jpg" title="Boy Bust" rel="shadowbox[Boy_Portrait]" class="thumbnail"></a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="img/characters/1.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail">
-								<img src="img/characters/1.jpg" alt="">
-							</a>
-							<a class="hidden" href="img/characters/2.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail"></a>
-							<a class="hidden" href="img/characters/3.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail"></a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="#" class="thumbnail">
-								<img src="http://placehold.it/260x180" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="row">
-					<ul class="thumbnails">
-						<li class="span3">
-							<a href="#" class="thumbnail">
-								<img src="http://placehold.it/260x180" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-
+	<!-- Flush the Buffer Early -->
+	<?php flush(); ?>
+	
+	<body>
+		
+		<div class = "container">
+			
+			
+			
+			<div class="page-header">
+				<h1>J. Krahe</h1>
 			</div>
 
-			<div class = "footer">
-				<p>&copy; <a href="mailto:jkrahe@andrew.cmu.edu">Jimmy Krahe</a></p>
+
+
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+						<ul class="nav">
+
+							<li class="active">
+								<a href="#">About</a>
+							</li>
+
+							<li>
+								<a id = "test" href="#">Resume
+									<!-- <i class="icon-envelope icon-white"> </i> -->
+								</a>
+							</li>
+
+							<li>
+								<a href="#">Portfolio</a>
+							</li>
+
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end of navbar -->
+			</div>
+			
+			
+			
+			
+			<h1>The Slideshow</h1>
+			<div id="gallery" class="nivoGallery">
+				<ul>
+					<li data-title="Lorem ipsum 1" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/characters/3.jpg" alt="" /></li>
+					<li data-title="Lorem ipsum 2" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/2.jpg" alt="" /></li>
+					<li data-title="Lorem ipsum 3" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/3.jpg" alt="" /></li>
+					<li data-title="Lorem ipsum 4" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/alien/4.jpg" alt="" /></li>
+					<!-- <li data-type="html" data-title="Lorem ipsum 5" data-caption="dolor sit amet, consectetur adipiscing elit">
+					<h1>Heading</h1>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+					</li>
+					<li data-type="video" data-title="Vimeo Video">
+					<iframe src="http://player.vimeo.com/video/29950141?portrait=0&amp;color=ffffff" width="670" height="377" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+					</li>
+					<li data-type="video" data-title="YouTube Video">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/72hTSFkYVAo?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+					</li>
+					<li data-type="video" data-title="HTML5 Video">
+					<video width="700" height="390" controls="control" preload="none"> 
+					<source src="http://mediaelementjs.com/media/echo-hereweare.mp4" type="video/mp4" /> 
+					<source src="http://mediaelementjs.com/media/echo-hereweare.webm" type="video/webm" /> 
+					<source src="http://mediaelementjs.com/media/echo-hereweare.ogv" type="video/ogg" /> 
+					</video>
+					</li> -->
+				</ul>
+			</div>
+			<!-- end of slideshow unit -->
+
+
+
+			<div class = "hero-unit">
+				<h1>The Gallery</h1>
+				<!-- for testing purposes -->
+				<!-- <img src="img/alien1/2.jpg" alt="" style="image-orientation: 90deg;"> -->
+				<p>Tagline</p>
+				<p>
+					<a class="btn btn-primary btn-large">
+						Learn more
+					</a>
+				</p>
+				
+				
+				
+				
+				<div class = "modal-footer">
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="img/alien/4.jpg" title="Clay Alien" rel="shadowbox[Alien]" class="thumbnail">
+									<img src="img/alien/4.jpg" alt="">
+								</a>
+								<a class ="hidden" href="img/alien/1.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
+								<a class ="hidden" href="img/alien/2.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
+								<a class ="hidden" href="img/alien/3.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="img/acneman/1.jpg" rel="shadowbox[Acneman]" title="Acneman!" class="thumbnail">
+									<img src="img/acneman/1.jpg" alt="">
+								</a>
+								<a class="hidden" href="img/acneman/2.jpg" title="Acneman!" rel="shadowbox[Acneman]" class="thumbnail"></a>
+
+							</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="img/boy/1.jpg" rel="shadowbox[Boy_Portrait]" title="Boy Bust" class="thumbnail">
+									<img src="img/boy/1.jpg" alt="">
+								</a>
+								<a class="hidden" href="img/boy/2.jpg" title="Boy Bust" rel="shadowbox[Boy_Portrait]" class="thumbnail"></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="img/characters/1.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail">
+									<img src="img/characters/1.jpg" alt="">
+								</a>
+								<a class="hidden" href="img/characters/2.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail"></a>
+								<a class="hidden" href="img/characters/3.jpg" title="Characters" rel="shadowbox[Characters]" class="thumbnail"></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="#" class="thumbnail">
+									<img src="http://placehold.it/260x180" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="row">
+						<ul class="thumbnails">
+							<li class="span3">
+								<a href="#" class="thumbnail">
+									<img src="http://placehold.it/260x180" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+
+				<div class = "footer">
+					<p>&copy; <a href="mailto:jkrahe@andrew.cmu.edu">Jimmy Krahe</a></p>
+				</div>
+
+				<!-- end of content / hero unit-->
 			</div>
 
-			<!-- end of content / hero unit-->
+			<!-- end of container -->
 		</div>
 
-		<!-- end of container -->
-	</div>
 
 
-
-
-</body>
-</html>
+	</body>
+	</html>
