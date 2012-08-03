@@ -24,7 +24,6 @@ body
 	position:relative;
 	top:-50px;
 	margin-bottom: -60px;
-	/*	background-color: #EEE;*/
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -128,14 +127,5 @@ a.thumbnail:hover
 	line-height: 1;
 	color: #eee;
 	letter-spacing: -1px;
-}
-
-/*li.span3 a*/
-{
-	transform:rotate(90deg);
-	-ms-transform:rotate(90deg); /* IE 9 */
-	-moz-transform:rotate(90deg); /* Firefox */
-	-webkit-transform:rotate(90deg); /* Safari and Chrome */
-	-o-transform:rotate(90deg); /* Opera */
 }
 

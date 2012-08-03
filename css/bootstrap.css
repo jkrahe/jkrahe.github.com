@@ -8,6 +8,91 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+/*Custom (because i'm too lazy to change the link in index)*/
+
+.nav li a
+{
+	opacity:0.7 !important;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+
+.nav li a:hover
+{
+	opacity:1 !important;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+
+.nav .active a
+{
+	opacity:1 !important;
+}
+
+.page-header h1 a
+{
+	opacity:0.5 !important;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+
+.page-header h1 a:hover
+{
+	opacity:1 !important;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+.footer p a
+{
+	opacity:0.5;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+
+.footer p a:hover
+{
+	opacity:0.9 !important;
+	color:#eee !important;
+	transition: opacity .50s ease-in-out;
+	   -moz-transition: opacity .50s ease-in-out;
+	   -webkit-transition: opacity .50s ease-in-out;
+}
+
+.page-header h1 a:hover
+{
+	color:#eee !important; 
+}
+.modal-footer 
+{
+	width:100%!important;
+}
+
+.row .thumbnails .span3 h1
+{
+	text-align:center;
+	color:red !important;
+	font-size:200%!important;
+
+}
+.intro h1, .intro h2
+{
+	color:#eee;
+	left:20px;
+	position:relative;
+	font-weight:normal;
+	font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+
+/*---------------------*/
+
+/*Bootstrap*/
+
 .clearfix {
   *zoom: 1;
 }
@@ -2511,6 +2596,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
+
 }
 .nav > .pull-right {
   float: right;
@@ -3014,12 +3100,12 @@ input[type="submit"].btn.btn-mini {
   background-color: transparent;
   color: #ffffff;
   text-decoration: none;
+
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
   color: #ffffff;
   text-decoration: none;
-  background-color: #222222;
 }
 .navbar .divider-vertical {
   height: 40px;
