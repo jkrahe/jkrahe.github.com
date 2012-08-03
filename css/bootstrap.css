@@ -196,7 +196,8 @@ a:hover {
   width: 300px;
 }
 .span3 {
-  width: 220px;
+  max-width: 220px;
+  max-height: 280px;
 }
 .span2 {
   width: 140px;
