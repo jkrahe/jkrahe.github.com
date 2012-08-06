@@ -10,9 +10,26 @@
 
 /*Custom (because i'm too lazy to change the link in index)*/
 
+.footer p span
+{
+	font-size:15px;
+}
+
+
+.hero-unit + .footer
+{
+	margin-top:30em !important;
+}
+.footer
+{
+/*	border: 1px solid #999 !important;*/
+	height:10px !important;
+	bottom:100px;
+	position:relative;
+}
 .nav li a
 {
-	opacity:0.7 !important;
+	opacity:0.6 !important;
 	transition: opacity .50s ease-in-out;
 	   -moz-transition: opacity .50s ease-in-out;
 	   -webkit-transition: opacity .50s ease-in-out;
@@ -49,6 +66,7 @@
 .footer p a
 {
 	opacity:0.5;
+	color:#eee !important;
 	transition: opacity .50s ease-in-out;
 	   -moz-transition: opacity .50s ease-in-out;
 	   -webkit-transition: opacity .50s ease-in-out;
@@ -69,7 +87,7 @@
 }
 .modal-footer 
 {
-	width:100%!important;
+	
 }
 
 .row .thumbnails .span3 h1
