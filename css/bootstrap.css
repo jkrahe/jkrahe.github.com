@@ -90,21 +90,15 @@
 	
 }
 
-.row .thumbnails .span3 h1
+.modal-footer h1
 {
-	text-align:center;
-	color:red !important;
+	font-family: 'Open Sans Condensed', sans-serif !important;
+	text-align:left;
+	color:black !important;
 	font-size:200%!important;
 
 }
-.intro h1, .intro h2
-{
-	color:#eee;
-	left:20px;
-	position:relative;
-	font-weight:normal;
-	font-family: 'Open Sans Condensed', sans-serif !important;
-}
+
 
 
 /*---------------------*/
