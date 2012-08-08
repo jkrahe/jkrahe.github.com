@@ -49,12 +49,22 @@
 	Shadowbox.init({
 		handleOversize:     "drag",
 		displayNav:         true,
+		slideshowDelay: 	3, 
 		handleUnsupported:  "remove",
 		handleOversize: "resize",
 		overlayOpacity: 0.8,
 		modal: false
 
 	});
+	
+	Shadowbox.setup('a[title="movie"]', {
+        height:     327,
+        width:      400,
+        flashVars:  {
+            docid:    "1352016870638076087",
+            autoplay: "1"
+        }
+    });
 
 	// A really simple yet elegant fade in. 
 
@@ -132,7 +142,7 @@
 
 
 
-					<h1>The Slideshow</h1>
+
 					<div id="gallery" class="nivoGallery">
 						<ul>
 							<li data-title="Lorem ipsum 1" data-caption="dolor sit amet, consectetur adipiscing elit"><img src="img/characters/3.jpg" alt="" /></li>
@@ -162,6 +172,8 @@
 						</ul>
 					</div>
 					<!-- end of slideshow unit -->
+
+
 
 
 					<!-- 3D sculptures area -->
@@ -253,16 +265,17 @@
 								</li>
 							</ul>
 						</div>
-
+						
 						<div class="row">
 							<ul class="thumbnails">
 								<li class="span3">
-									<a href="img/baldy/1.png" rel="shadowbox" title="Baldy!" class="thumbnail">
-										<img src="img/baldy/1.png" height="280" alt="">
+									<a href="img/mandude/mandude.jpg" rel="shadowbox" title="Man Dude" class="thumbnail">
+										<img src="img/mandude/mandude.jpg" alt="">
 									</a>
 								</li>
 							</ul>
 						</div>
+
 
 						<div class="row">
 							<ul class="thumbnails">
@@ -284,25 +297,30 @@
 							</ul>
 						</div>
 
+							<div class="row">
+								<ul class="thumbnails">
+									<li class="span3">
+										<a href="img/baldy/1.png" rel="shadowbox" title="Baldy!" class="thumbnail">
+											<img src="img/baldy/1.png" height="280" alt="">
+										</a>
+									</li>
+								</ul>
+							</div>
 				
 						<!-- end of content / hero unit 1-->
 
 					</div>
 
-
-
 					<!-- Misc. area -->
 					<div class = "modal-footer">
 						<h1>Miscellaneous</h1>
 						<div class="row">
+							<!-- <p>movie</p> -->
 							<ul class="thumbnails">
 								<li class="span3">
-									<a href="img/movies/ahrg.mov" title="Clay Alien" rel="shadowbox[Alien]" class="thumbnail">
-										<img src="img/quad/1.png" alt="">
+									<a href="https://www.dropbox.com/s/8w54sgo4dn10f3v/%20ahrg.mov" title="movie" rel="" class="thumbnail" target="_blank">
+										<img title="movie" src="img/movies/ahrg_img.png" alt="">
 									</a>
-									<a class ="hidden" href="img/alien/1.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
-									<a class ="hidden" href="img/alien/2.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
-									<a class ="hidden" href="img/alien/3.jpg" rel="shadowbox[Alien]" title="Clay Alien" class="thumbnail"></a>
 								</li>
 							</ul>
 						</div>
@@ -310,14 +328,25 @@
 						<div class="row">
 							<ul class="thumbnails">
 								<li class="span3">
-									<a href="img/acneman/1.jpg" rel="shadowbox[Acneman]" title="Acneman!" class="thumbnail">
-										<img src="img/acneman/1.jpg" alt="">
+									<a href="https://www.dropbox.com/s/7ys4vjo90b8m73d/anthraxWIP.MOV" rel="" title="Acneman!" class="thumbnail" target="_blank">
+										<img src="img/movies/cows.png" alt="">
 									</a>
-									<a class="hidden" href="img/acneman/2.jpg" title="Acneman!" rel="shadowbox[Acneman]" class="thumbnail"></a>
-
 								</li>
 							</ul>
 						</div>	
+						
+						
+						<div class="row">
+							<ul class="thumbnails">
+								<li class="span3">
+									<a href="https://www.dropbox.com/s/vbbyu26kxkcrx6y/headsSpinning.mov" rel="" title="Acneman!" class="thumbnail" target="_blank">
+										<img src="img/movies/faces.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+							
+						<!-- end of modal footer -->
 					</div>
 				
 				
