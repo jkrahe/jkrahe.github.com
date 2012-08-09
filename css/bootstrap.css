@@ -10,6 +10,12 @@
 
 /*Custom (because i'm too lazy to change the link in index)*/
 
+a.info:hover span { 
+display: block; 
+position: absolute; 
+border: thin solid black; 
+background-color: yellow; 
+}
 #dwnld-link, #contact-blurb
 {
 	left:100px;
