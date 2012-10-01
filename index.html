@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-	"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -16,6 +15,8 @@
 
 	<!-- CSS files -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/nivo-gallery.min.css" media="screen" /> -->
 
@@ -49,46 +50,37 @@
 	// A really simple yet elegant fade in. 
 
 	// $(function(){
-	// 	$('.page-header h1').fadeTo(0,0);
-	// 	$('.navbar').fadeTo(0,0);
-	// 	$('#gallery').fadeTo(0,0);
-	// 
-	// 	$('.page-header h1').fadeTo(3000,1, function(){
-	// 		$('.navbar').fadeTo(2000, 1, function(){
-	// 			$('#gallery').fadeTo(2000,1);
-	// 		});
-	// 	});
-	// 
-	// });
-	</script>
+		// 	$('.page-header h1').fadeTo(0,0);
+		// 	$('.navbar').fadeTo(0,0);
+		// 	$('#gallery').fadeTo(0,0);
+		// 
+		// 	$('.page-header h1').fadeTo(3000,1, function(){
+			// 		$('.navbar').fadeTo(2000, 1, function(){
+				// 			$('#gallery').fadeTo(2000,1);
+				// 		});
+				// 	});
+				// 
+				// });
+				</script>
 
-	<script src="js/jquery.nivo.gallery.min.js"></script>
-	<script type="text/javascript">
-	$(function() {
-		$('#gallery').nivoGallery();
-	});
-	</script>
-	
-	<!-- Typekit Web font -->
-	<!-- <script type="text/javascript" src="//use.typekit.net/vhy6qrg.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	 -->
-	<script type="text/javascript">
-	  (function() {
-	    var config = {
-	      kitId: 'vhy6qrg',
-	      scriptTimeout: 3000
-	    };
-	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
-	
-	
-	<!-- Google Web Font -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Francois+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'> -->
+				<script src="js/jquery.nivo.gallery.min.js"></script>
+				<script type="text/javascript">
+				$(function() {
+					$('#gallery').nivoGallery();
+				});
+				</script>
 
-</head>
+				<!-- Typekit Web font -->
+				<script type="text/javascript" src="//use.typekit.net/vhy6qrg.js"></script>
+				<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+
+				<!-- Google Web Font -->
+				<!-- <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Francois+One' rel='stylesheet' type='text/css'>
+				<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'> -->
+
+			</head>
 
 			<!-- Flush the Buffer Early -->
 			<?php flush(); ?>
@@ -96,15 +88,51 @@
 			<body>
 
 				<div class = "container">
-					<h1>J. Krahe</h1>
+					<div id = "header" class = "sixteen columns">
+						<h1><a href="index.html">J. Krahe </a></h1>
 
-			
-						<div class = "footer">
-							<p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+					</div>
+
+
+					<div class = "imgGallery">
+						why no color?
+						<div class = "four columns">
+							<img src = "img/dino/1.png">
 						</div>
+						<div class = "four columns">
+							<img src = "img/dino/1.png">
+						</div>
+						<div class = "four columns">
+							<img src = "img/dino/1.png">
+						</div>
+						<div class = "four columns">
+							<img src = "img/dino/1.png">
+						</div>
+						
+							<div class = "four columns">
+								<img src = "img/dino/1.png">
+							</div>
+							<div class = "four columns">
+								<img src = "img/dino/1.png">
+							</div>
+							<div class = "four columns">
+								<img src = "img/dino/1.png">
+							</div>
+							<div class = "four columns">
+								<img src = "img/dino/1.png">
+							</div>
+						why no color? 
+					</div>
 
-						<!-- end of content / hero unit-->
-				
+
+
+
+					<div id = "footer" class="sixteen columns">
+						<p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+					</div>
+
+					<!-- end of content / hero unit-->
+
 
 					<!-- end of container -->
 				</div>

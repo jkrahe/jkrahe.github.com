@@ -2,120 +2,61 @@
 body
 {
 	background-color: black;
-	background-image: url('../img/bg_grunge.jpg');
-	background-size: 100%;
-	background-repeat: no-repeat;
-/*	background-position: top center;*/
+	background-image: url('../img/bg_grunge_smaller.jpg');
+	/*	background-position: top center;*/
 	/*	font-family: 'Open Sans Condensed', sans-serif !important;*/
-/*	font-family: 'Francois One', sans-serif !important;*/
+	/*	font-family: 'Francois One', sans-serif !important;*/
+	box-sizing:border-box;
+}
+
+@font-face
+{
+	font-family: headerFont;
+	src: url('../fonts/Plakatbau.ttf'); 
+}
+
+
+.container
+{
+	border-radius:10px;
+}
+
+
+#header
+{
+
 }
 
 h1
 {
-	font-family: "edding-780", cursive;
-	font-style: normal;
-	font-weight: 400;
-	color:white;
-/*	font-family: "bd-palaktbau",sans-serif; */
+	font-family: headerFont; 
+	font-size:200px;
 }
 
-
-.page-header
+#header h1 a
 {
-	border: none !important;
-}
-
-.row
-{
+	color:white !important;
+	text-decoration:none;
 	float:left;
-	padding:20px;
-	width:30%;
-}
-
-.hero-unit
-{
-	top:-100px;
-	width:100% !important;
 	position:relative;
-	max-height:860px;
-	color:#eee;
-	background-color: transparent !important;
-}
-
-h1
-{
-/*	font-family: 'Francois One', sans-serif !important;*/
-}
-
-.pic-grid
-{
-	padding:30px;
-	margin-top:7em;
-	position:relative;
-}
-
-.navbar-inner .container
-{
-	position:relative;
-	width:100%;
-	border-bottom: 1px dashed #eee;
-	padding:10px;
-	border-top: 1px dashed #eee;
-	margin-bottom:100px;
+	top:-200px;
 }
 
 
-.container .nav li a
+img
 {
-	font-family: 'Open Sans Condensed', sans-serif !important;
-	position:relative;
-	left:60px;
-	margin-right:70px;
-	font-size:4em;
+	width:200px;
+	height:150px;
+	border: 1px solid red;
+	margin-top:50px;
 }
 
-.thumbnail > img
+.imgGallery
 {
-	opacity:0.6;
-	transition: opacity .50s ease-in-out;
-	   -moz-transition: opacity .50s ease-in-out;
-	   -webkit-transition: opacity .50s ease-in-out;
-}
-
-a.thumbnail:hover
-{
-	border-color: black !important;
-}
-.thumbnail > img:hover
-{
-	opacity:1;
-	transition: opacity .50s ease-in-out;
-	   -moz-transition: opacity .50s ease-in-out;
-	   -webkit-transition: opacity .50s ease-in-out;
-}
-
-.footer
-{
-	margin-top:15em;
-	padding: 10px 0;
 	text-align:center;
-	padding: 60px;
 }
 
-.footer a
+#footer
 {
-	font-size:2em;
+	clear:both;
 }
-
-.navbar + h1
-{
-
-	top:50px;
-	position:relative;
-	margin-bottom: -40px;
-	font-size: 60px;
-	line-height: 1;
-	color: #eee;
-	letter-spacing: -1px;
-}
-
