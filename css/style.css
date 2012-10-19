@@ -29,7 +29,6 @@ body
     text-align:center;
     margin:30px;
     padding:10px;
-    border:1px dashed blue;
     min-height:500px;
 }
 
@@ -41,21 +40,25 @@ a
 
 h1 a, .nav a
 {
-position:absolute;
-color:white;
-font-family:header;
+    position:absolute;
+    color:white;
+    font-family:header;
 }
 
-h1, h4
+h1 a:hover, .nav a:hover
 {
+    position:absolute;
+}
 
+
+h1 a, .nav.lea a, .nav.exp a
+{
+    top:50%;
 }
 
 h1 a
 {
     font-size:120px;
-    text-align:center;
-    top:50%;
     margin-top:-10%;
     text-shadow: 0.01em 0.09em #000;
 }
@@ -63,21 +66,12 @@ h1 a
 .nav a
 {
     font-size:50px;
-    opacity:0.2;
-}
-.nav.res a
-{
-    
 }
 
-.nav.lea a, .nav.exp a
-{
-    top:50%;
-}
 
 .nav.lea a
 {
-left:0;
+    left:0;
 }
 
 .nav.exp a
@@ -87,6 +81,40 @@ left:0;
 
 .nav.cre a, .nav.ski a
 {
-    clear:both;
+    bottom:0;
 }
+
+.nav.cre a
+{
+    left:25%;
+}
+
+.nav.ski a 
+{
+    left:75%;
+}
+
+
+/* Navigation Blur */
+
+.nav a,
+.nav a:visited {
+    color: rgba(255,255,255,0.01);
+    text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
+    transition: color linear 0.2s, text-shadow linear 0.2s; 
+    -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
+    }
+
+
+
+
+/* text-shadow fades to very transparent, font color to nearly opaque
+no extreme values used to improve smoothness of effect */
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus,
+.nav a.activeLink {
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,.05) }
 
