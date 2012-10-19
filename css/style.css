@@ -1,6 +1,13 @@
 @font-face
 {
-    
+    font-family:header;
+    src: url("../fonts/plakatbau.ttf");
+}
+
+@font-face
+{
+    font-family:content;
+    src: url();
 }
 
 body
@@ -12,8 +19,7 @@ body
     background-position: top center;
     padding:0px;
     margin:40px;
-    /*	font-family: 'Open Sans Condensed', sans-serif !important;*/
-    font-family: 'Francois One', sans-serif !important;
+/*   font-family: content;*/
 }
 
 .container
@@ -28,9 +34,11 @@ a
 {
     text-decoration:none;
 }
+
 h1 a, h4 a
 {
     color:white;
+    font-family:header;
 }
 
 
