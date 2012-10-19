@@ -59,13 +59,15 @@ h1 a, .nav.lea a, .nav.exp a
 h1 a
 {
     font-size:120px;
-    margin-top:-10%;
+    margin-top:-5%;
     text-shadow: 0.01em 0.09em #000;
 }
 
 .nav a
 {
-    font-size:50px;
+    border:1px dashed blue;
+    padding:30px;
+    font-size:60px;
 }
 
 
