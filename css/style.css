@@ -1,7 +1,7 @@
 @font-face
 {
     font-family:header;
-    src: url("../fonts/plakatbau.ttf");
+    src: url("../fonts/Plakatbau.ttf");
 }
 
 @font-face
@@ -14,19 +14,23 @@ body
 {
     background-color: black;
     background-image: url('../img/main_bg.jpeg');
-    background-size: 100%;
+    /*makes bg resize with window*/
+    /*    background-size: 100%;*/
     background-repeat: no-repeat;
     background-position: top center;
     padding:0px;
     margin:40px;
-/*   font-family: content;*/
+    /*   font-family: content;*/
 }
 
 .container
 {
     position:relative;
-    margin:20px;
-    padding:20px;
+    text-align:center;
+    margin:30px;
+    padding:10px;
+    border:1px dashed blue;
+    min-height:500px;
 }
 
 
@@ -35,10 +39,54 @@ a
     text-decoration:none;
 }
 
-h1 a, h4 a
+h1 a, .nav a
 {
-    color:white;
-    font-family:header;
+position:absolute;
+color:white;
+font-family:header;
 }
 
+h1, h4
+{
+
+}
+
+h1 a
+{
+    font-size:120px;
+    text-align:center;
+    top:50%;
+    margin-top:-10%;
+    text-shadow: 0.01em 0.09em #000;
+}
+
+.nav a
+{
+    font-size:50px;
+    opacity:0.2;
+}
+.nav.res a
+{
+    
+}
+
+.nav.lea a, .nav.exp a
+{
+    top:50%;
+}
+
+.nav.lea a
+{
+left:0;
+}
+
+.nav.exp a
+{
+    right:0;
+}
+
+.nav.cre a, .nav.ski a
+{
+    clear:both;
+}
 
