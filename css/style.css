@@ -105,7 +105,7 @@ h1 a
     text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
     transition: color linear 0.2s, text-shadow linear 0.2s; 
     -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
-    }
+}
 
 
 
@@ -119,4 +119,39 @@ no extreme values used to improve smoothness of effect */
 .nav a.activeLink {
     color: white;
     text-shadow: 0 0 8px rgba(0,0,0,.05) }
+
+
+
+/*animation*/
+/*you need to create some for firefox and opera*/
+/* see you're hw3 part 4 css for details*/
+/*safari & chrome*/
+@-webkit-keyframes animationName {
+    0% {
+        margin-top: +20px;
+        margin-left:-10px;;
+/*        color: red;*/
+
+    }
+    50% {
+        margin-top: -20px;
+        margin-left:+10px;
+/*        color: blue;*/
+    }
+    100% {
+/*        left: -20%;*/
+/*        color: green;*/
+    }
+}
+/*test out some more*/
+.nav a{
+    -webkit-animation-name: animationName;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+
+
 
