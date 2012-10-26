@@ -15,21 +15,88 @@ body
     background-color: black;
     background-image: url('../img/main_bg.jpeg');
     /*makes bg resize with window*/
-    /*    background-size: 100%;*/
+/*        background-size: 100%;*/
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position:top center;
     padding:0px;
-    margin:40px;
+    margin:0px;
+/*    position:absolute;*/
     /*   font-family: content;*/
 }
 
-.container
+div
+{
+    display:block;
+}
+.container .two.columns
 {
     position:relative;
     text-align:center;
-    margin:30px;
-    padding:10px;
-    min-height:500px;
+    border:1px dashed red;
+    height:100px;
+    box-sizing:border-box;
+}
+
+.container .two.columns h1 a
+{
+    font-size:20px;
+}
+.container
+{
+    position:inherit;
+    min-width:100%;
+    min-height:inherit;
+}
+
+.content
+{
+    width:100%;
+    padding:0;
+    position:relative;
+    min-height:inherit;
+    margin:0;
+    /*    height:150px;*/
+
+}
+
+.container .section
+{
+    text-align:center;
+    width:25%;
+    max-width:240px;
+    display:inline-block;
+    border:2px solid black;
+    min-height:inherit;
+}
+
+.container .section div
+{
+        margin-top:20px;
+}
+
+.main-page
+{
+    
+left:0;
+right:0;
+bottom:40;
+top:0;
+margin:40px;
+min-height:650px;
+min-width: 1000px;
+position:absolute;
+text-align:center;
+/*position:fixe;*/
+
+/*    padding:10px;*/
+
+/*margin:10px;*/
+/*    margin-bottom:50px !important;*/
+
+/*height:100%;*/
+/*min-height:500px;*/
+background-color:grey;
+
 }
 
 
@@ -97,6 +164,13 @@ h1 a
 }
 
 
+.footer
+{
+    color:white;
+    border:2px red dashed;
+    margin:20px;
+}
+
 /* Navigation Blur */
 
 .nav a,
@@ -130,18 +204,18 @@ no extreme values used to improve smoothness of effect */
     0% {
         margin-top: +20px;
         margin-left:-10px;;
-/*        color: red;*/
+        /*        color: red;*/
 
     }
     50% {
         margin-top: -20px;
         margin-left:+10px;
-/*        color: blue;*/
+        /*        color: blue;*/
     }
     100% {
-/*        left: -20%;*/
-/*        color: green;*/
-    }
+    /*        left: -20%;*/
+    /*        color: green;*/
+}
 }
 /*test out some more*/
 .nav a{
