@@ -15,12 +15,12 @@ body
     background-color: black;
     background-image: url('../img/main_bg.jpeg');
     /*makes bg resize with window*/
-/*        background-size: 100%;*/
+    /*        background-size: 100%;*/
     background-repeat: no-repeat;
     background-position:top center;
     padding:0px;
     margin:0px;
-/*    position:absolute;*/
+    /*    position:absolute;*/
     /*   font-family: content;*/
 }
 
@@ -28,25 +28,29 @@ div
 {
     display:block;
 }
+
+
 .container .two.columns
 {
-    position:relative;
-    text-align:center;
-    border:1px dashed red;
-    height:100px;
-    box-sizing:border-box;
+/*    position:absolute;*/
+text-align:center;
+border:1px dashed red;
+height:100px;
+box-sizing:border-box;
 }
 
 .container .two.columns h1 a
 {
     font-size:20px;
 }
+
 .container
 {
-    position:inherit;
-    min-width:100%;
-    min-height:inherit;
+/*    position:inherit;*/
+/*    min-width:100%;*/
+/*    min-height:inherit;*/
 }
+
 
 .content
 {
@@ -55,38 +59,50 @@ div
     position:relative;
     min-height:inherit;
     margin:0;
-    /*    height:150px;*/
+/*    background: rgba(0, 0, 0, .2);*/
+/*    background-color:black;*/
 
 }
 
+
 .container .section
 {
+    margin-right:30px;
+    padding:20px;
     text-align:center;
     width:25%;
     max-width:240px;
     display:inline-block;
-    border:2px solid black;
+/*    background-color:grey;*/
+/*    border:2px solid black;*/
     min-height:inherit;
+    margin-top:60px;
 }
 
 .container .section div
 {
-        margin-top:20px;
+    margin-top:20px;
+}
+
+.container .section div:nth-child(7), .section div:nth-child(8)
+{
+/*    background-color:red;*/
+margin-bottom:20px;
 }
 
 .main-page
 {
-    
-left:0;
-right:0;
-bottom:40;
-top:0;
-margin:40px;
-min-height:650px;
-min-width: 1000px;
-position:absolute;
-text-align:center;
-/*position:fixe;*/
+
+    left:0;
+    right:0;
+    bottom:40;
+    top:0;
+    margin:40px;
+    min-height:650px;
+    min-width: 1000px;
+    position:absolute;
+    text-align:center;
+    /*position:fixe;*/
 
 /*    padding:10px;*/
 
@@ -95,7 +111,7 @@ text-align:center;
 
 /*height:100%;*/
 /*min-height:500px;*/
-background-color:grey;
+/*background-color:grey;*/
 
 }
 
@@ -171,6 +187,8 @@ h1 a
     margin:20px;
 }
 
+
+
 /* Navigation Blur */
 
 .nav a,
@@ -213,9 +231,9 @@ no extreme values used to improve smoothness of effect */
         /*        color: blue;*/
     }
     100% {
-    /*        left: -20%;*/
-    /*        color: green;*/
-}
+        /*        left: -20%;*/
+        /*        color: green;*/
+    }
 }
 /*test out some more*/
 .nav a{
