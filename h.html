@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="Shortcut Icon" href="favicon.ico?289349832"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Jimmy Krahe</title>
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="Aderinsola Akintilo">
+    <!-- Date: 2012-06-24 -->
+
+
+
+
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/reset.css">
+       <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons.css">
+
+    <!-- jQuery Calls -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    
+    
+    <!-- js functions -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("body").css("display", "none");
+
+        $("body").fadeIn(1000);
+
+        $("a.transition").click(function(event){
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, loadPage); 
+                  
+        });
+
+        function loadPage() {
+            window.location = linkLocation;
+        }
+    });
+    </script>
+</head>
+
+<!-- Flush the Buffer Early -->
+<?php flush(); ?>
+
+<body>
+
+    <div class = "main-page">
+        <!-- <ul>
+        <li><h2><a href="index.html"> Skills  </a></h2></li>
+        <li><h2><a href="index.html"> Experience  </a></h2></li>
+        <li><h2><a href="index.html"> Resume  </a></h2></li>
+        <li><h2><a href="index.html"> Creative  </a></h2></li> 
+        <li><h2><a href="index.html"> Leadership  </a></h2></li>
+        </ul> -->
+
+        <!-- header -->
+        <div class="main-header">
+            <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
+            <div class="navbar">
+            <h2><a href="index.html"> Skills  </a></h2>  
+            <h2><a href="index.html"> Experience  </a></h2>  
+            <h2><a href="index.html"> Resume  </a></h2>  
+            <h2><a href="index.html"> Creative  </a></h2>  
+            <h2><a href="index.html"> Leadership  </a></h2>  
+            </div>
+        </div>
+        <!-- end of header -->
+
+
+
+        <!-- content -->
+        <div class="content">
+
+            <!-- digital sculptures page -->
+            <div id = "digital-sculptures" class="">
+
+                <div class = "section-header">
+                    <h2 class="hidden left">
+                        <a>Prev</a>
+                    </h2>
+                    
+                    <a class="transition" href="#next"><i class="foundicon-left-arrow icons"></i></a> 
+                    
+                    <h2 >
+                        <a class = "page-title"> Digital Sculptures</a>
+                    </h2> 
+                    
+                    <h2 class = "hidden right"><a> 2D Sculptures </a></h2>
+                     <a class="transition" href="digital.html"><i class="foundicon-right-arrow icons"></i></a>
+                </div>
+
+
+                <div class="container">
+                    <div class = "section one">
+                        <h1> Header </h1>
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+
+                    </div>
+
+
+
+                    <div class = "section two">
+                        <h1> Header </h1>
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+                    </div>
+
+
+                    <div class = "section three">
+                        <h1> Header </h1>
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+                        <div class="two columns">   </div>    
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+        <!-- end of content -->
+
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <h1>THis is the footer!! </h1>
+            <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
+        </div>
+        <!-- end of footer -->
+
+    </div>
+    <!-- end of container unit -->
+
+
+
+    <!-- might not be necessary right now -->
+    <!-- <div class = "footer">
+    <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+    </div> -->
+
+<!-- end of content / hero unit-->
+
+
+<!-- end of container -->
+</div>
+
+
+
+</body>
+
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="js/shadowbox.js"></script>
+<script src="js/modernizr-1.7.min.js"></script>
+<script src="js/PageSlider.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+
+    // initialize website
+
+    // page sliding
+    initializeSlider(); 
+
+}); 
+
+
+</script>
+
+
+</html>

@@ -1,136 +1,759 @@
-/*	Custom styles messing with bootstrap */
+@font-face
+{
+    font-family:header;
+    src: url("../fonts/Plakatbau.ttf");
+}
+
+@font-face
+{
+    font-family:content;
+    src: url();
+}
+
 body
 {
-	background-color: black;
-	background-image: url('../img/main_bg.jpeg');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: top center;
-	/*	font-family: 'Open Sans Condensed', sans-serif !important;*/
-	font-family: 'Francois One', sans-serif !important;
+    background-color: black;
+    background-image: url('../img/new-bg.jpg');
+    /*makes bg resize with window*/
+    /*        background-size: 100%;*/
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    background-repeat: no-repeat;
+    background-position:top center;
+    padding:0px;
+    margin:0px;
 }
 
-.page-header h1 + h1 a
+
+.main-header h2
 {
-	font-size:90px !important;
+    display:inline !important;
 }
 
-.page-header h1
+.main-header h2 a
 {
-	text-align:center;
-	font-size:12em;
-	color:#eee;
-	/*	font-family: 'Bowlby One', cursive;*/
-	font-family: 'Francois One', sans-serif;
-	/*	font-family: 'Ubuntu', sans-serif;*/
-	/*	font-family: 'Open Sans Condensed', sans-serif;*/
-	font-weight: bold;
-	padding: 60px;
-	position:relative;
-	top:-50px;
-	margin-bottom: -60px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-
+    padding:10px;
 }
 
-.page-header
+.main-header h1 a
 {
-	border: none !important;
+    color:white !important;
+    position:relative;
+    text-shadow: 0.01em 0.05em rgba(123, 178, 0, 0.5) !important;
 }
 
-.row
+.main-header
 {
-	float:left;
-	padding:20px;
-	width:30%;
+    margin-bottom:60px;
 }
 
-.hero-unit
+.main-header a
 {
-	top:-100px;
-	width:100% !important;
-	position:relative;
-	max-height:860px;
-	color:#eee;
-	background-color: transparent !important;
-}
-
-h1
-{
-	font-family: 'Francois One', sans-serif !important;
-}
-
-.pic-grid
-{
-	padding:30px;
-	margin-top:7em;
-	position:relative;
-}
-
-.navbar-inner .container
-{
-	position:relative;
-	width:100%;
-	border-bottom: 1px dashed #eee;
-	padding:10px;
-	border-top: 1px dashed #eee;
-	margin-bottom:100px;
+    left:0; 
+    position:relative;
 }
 
 
-.container .nav li a
+
+div
 {
-	font-family: 'Open Sans Condensed', sans-serif !important;
-	position:relative;
-	left:60px;
-	margin-right:70px;
-	font-size:4em;
+/*    display:block;*/
 }
 
-.thumbnail > img
+
+.container .two.columns
 {
-	opacity:0.6;
-	transition: opacity .50s ease-in-out;
-	   -moz-transition: opacity .50s ease-in-out;
-	   -webkit-transition: opacity .50s ease-in-out;
+    text-align:center;
+    height:100px;
+    box-sizing:border-box;
 }
 
-a.thumbnail:hover
+.container .two.columns h1 a
 {
-	border-color: black !important;
+    font-size:20px;
 }
-.thumbnail > img:hover
+
+.container
 {
-	opacity:1;
-	transition: opacity .50s ease-in-out;
-	   -moz-transition: opacity .50s ease-in-out;
-	   -webkit-transition: opacity .50s ease-in-out;
+/*    position:inherit;*/
+/*    min-width:100%;*/
+/*    min-height:inherit;*/
 }
+
+
+.content
+{
+    width:100%;
+    padding:0;
+    position:relative;
+    min-height:inherit;
+    margin:0;
+    /*    background: rgba(0, 0, 0, .2);*/
+    /*    background-color:black;*/
+
+}
+
+
+.container .section
+{
+    padding:20px;
+    text-align:center;
+    width:25%;
+    max-width:240px;
+    display:inline-block;
+    min-height:inherit;
+    margin-top:60px;
+    margin-bottom:60px;
+    /*    background-color:grey;*/
+}
+
+.container .section:nth-child(1), .section:nth-child(2)
+{
+    border-right:2px solid black;
+}
+
+.two.columns:hover
+{
+    
+}
+.container .section div
+{
+/*    background-image:url("../images/template.jpg");*/
+    margin-top:50px;
+    -webkit-transition:all 0.6s ease; /* Remember vendor prefixes! */
+    background-position:top; 
+    border-radius:10px;
+    -webkit-box-shadow:
+    inset 0 0 20px blue,
+    inset 0 0 20px blue,
+    inset 0 0 20px blue;
+
+    -moz-box-shadow:
+    inset 0 0 50px #000,
+    inset 0 0 50px #000,
+    inset 0 0 50px #000;
+/*    rgba(123, 178, 0, 0.5)*/
+    box-shadow:
+    inset 0 0 10px rgba(150,150,150, 0.5),
+    inset 0 0 10px rgba(150,150,150, 0.5),
+    inset 0 0 10px rgba(150,150,150, 0.5);
+    /*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
+}
+
+.container .section div:hover
+{
+    -webkit-transition:all 0.6s ease;
+    cursor: pointer; 
+    cursor: hand
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.two.columns a img
+{
+/*    opacity:0;*/
+}
+
+
+
+.container .section h1
+{
+    color:white;
+    position:absolute;
+    padding:10px;
+    margin-left:70px;
+    font-size:40px;
+    text-align:center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+/*if you add more stuff into section you need to change the child numbers*/
+.container .section div:nth-child(8), .section div:nth-child(9)
+{
+
+    margin-bottom:20px;
+}
+
+.container .section div:nth-child(2), .section div:nth-child(3)
+{
+    margin-top:60px;
+}
+
+.main-page
+{
+
+    left:0;
+    right:0;
+    bottom:40;
+    top:0;
+    margin:40px;
+    min-height:650px;
+    min-width: 1000px;
+    position:absolute;
+    text-align:center;
+
+}
+
+
+a
+{
+    text-decoration:none;
+}
+
+#main-title
+{
+    left:0;
+    right:0;
+    /*    #387CB9*/
+    /* #7BB200*/
+    /*rgba(123, 178, 0, 1)*/
+    /*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
+    text-shadow: 0.01em 0.05em rgba(123, 178, 0, 0.5) !important;
+}
+#main-title, .nav a
+{
+    font-family:header;
+    position:absolute;
+    color:white;
+    /*    text-shadow: 0.01em 0.09em rgba(255,204,10,0.4) !important;*/
+}
+
+h1 a:hover, .nav a:hover
+{
+    position:absolute;
+}
+
+
+h1 a, .nav.lea a, .nav.exp a
+{
+    top:50%;
+}
+
+h1 a, h2 a, h3 a
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-size:120px;
+    margin-top:-5%;
+    text-shadow: 0.01em 0.09em #000 !important;
+}
+
+h1 a
+{
+    font-family:header;
+}
+
+h2 a 
+{
+    font-size:30px !important;
+}
+
+.container h1
+{
+    font-size:20px !important;
+}
+
+.nav.res a
+{
+    left:40%;
+    right:40%;
+    max-width:350px;
+
+}
+
+.nav a
+{
+
+    padding:30px;
+    font-size:60px;
+}
+
+
+.nav.lea a
+{
+    left:0;
+}
+
+.nav.exp a
+{
+    right:0;
+}
+
+.nav.cre a, .nav.ski a
+{
+    bottom:0;
+}
+
+.nav.cre a
+{
+    left:25%;
+}
+
+.nav.ski a 
+{
+    left:65%;
+}
+
 
 .footer
 {
-	margin-top:15em;
-	padding: 10px 0;
-	text-align:center;
-	padding: 60px;
+    color:white;
+    border:2px red dashed;
+    margin:20px;
 }
 
-.footer a
+
+
+
+
+
+/* Navigation Blur */
+
+.nav a,
+.nav a:visited {
+    color: rgba(255,255,255,0.01);
+    text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
+    transition: color linear 0.2s, text-shadow linear 0.2s; 
+    -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
+}
+
+
+
+
+/* text-shadow fades to very transparent, font color to nearly opaque
+no extreme values used to improve smoothness of effect */
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus,
+.nav a.activeLink {
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,.05) }
+
+
+
+/*animation*/
+/*you need to create some for firefox and opera*/
+/* see you're hw3 part 4 css for details*/
+/*safari & chrome*/
+@-webkit-keyframes animationName {
+    0% {
+        margin-top: +20px;
+        margin-left:-10px;;
+        /*        color: red;*/
+
+    }
+    50% {
+        margin-top: -20px;
+        margin-left:+10px;
+        /*        color: blue;*/
+    }
+    100% {
+        /*        left: -20%;*/
+        /*        color: green;*/
+    }
+}
+/*test out some more*/
+.nav a{
+    /*  -webkit-animation-name: animationName;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;*/
+}
+
+.section-header h2
 {
-	font-size:2em;
+    display:inline;
 }
 
-.navbar + h1
+.icons
+{
+    position:relative;
+    font-size:40px;
+    padding:10px;
+    overflow:hidden;
+    top:10px;
+    color:black;
+    -webkit-transition:color 0.5s ease;
+    -moz-transition:color 0.5s ease; 
+    text-shadow:1px 1px 4px grey;
+}
+
+
+
+
+a.transition
 {
 
-	top:50px;
-	position:relative;
-	margin-bottom: -40px;
-	font-size: 60px;
-	line-height: 1;
-	color: #eee;
-	letter-spacing: -1px;
 }
 
+.icons:hover
+{
+    -moz-transition:color 0.5s ease; 
+    -webkit-transition:color 0.5s ease;
+    color:white;
+    text-shadow:1px 1px 4px black;
+}
+
+
+
+.left, .right
+{
+    opacity:0.7;
+    -webkit-transition:opacity 0.5s ease;  
+    -moz-transition:opacity 0.5s ease; 
+}
+
+.left.hidden, .right.hidden, .hidden
+{
+    opacity:0;
+    -webkit-transition:opacity 0.5s ease;
+    -moz-transition:opacity 0.5s ease; 
+}
+
+
+.left a:nth-child(1), .right a:nth-child(1)
+{
+    font-size:20px !important;
+}
+
+.main-header a
+{
+    color:white;
+    font-family:header;
+    text-shadow: 0.01em 0.09em #000 !important;
+}
+
+.main-header h2 a
+{
+    font-size:40px !important;
+}
+
+
+.main-page
+{
+    margin:120px;
+    margin-bottom:80px !important;
+}
+
+
+
+
+
+
+
+
+/* section css */
+.page-title
+{
+    z-index:1;
+    left:0;
+    right:0;
+    position:absolute;
+}
+
+.left
+{
+    top:-25px;  
+    left:-5%;
+    position:relative;
+}
+
+.right
+{
+    top:-25px;
+    left:15% !important;
+    position:relative;
+}
+
+
+.section-header h2 a
+{
+    font-size:25px !important;
+    color:white;
+}
+
+.section-header
+{
+
+    position:relative;
+    height:100px;
+
+}
+
+.left + a.transition
+{
+    position:relative;
+    top:-20px;
+    margin-right:20%;
+    z-index:3;
+    /*    left:25%;*/
+}
+
+.right + a.transition
+{
+    position:relative;
+    top:-20px;
+    left:-5% !important;
+    z-index:3;
+}
+
+.section-header *
+{
+
+}
+
+
+
+
+/* navbar */
+
+.navbar
+{
+    border-radius:10px;
+}
+
+.main-header .navbar
+{
+    position:relative !important;
+    background-color:rgba(0,0,0,0.5);
+    margin:20px;
+    height:80px;
+    padding-top:40px;
+    text-align: center;
+    /*    box-shadow: -3px -3px 3px #387CB9;*/
+    /*    -webkit-box-shadow: 0px -3px 3px #CCC;
+    -webkit-box-shadow: 0px 3px 3px #CCC;*/
+    -webkit-box-shadow: 1px 1px rgba(123, 178, 0, 0.5), 2px 2px rgba(123, 178, 0, 0.5), 3px 3px rgba(123, 178, 0, 0.50), 4px 4px rgba(123, 178, 0, 0.50), 5px 5px rgba(123, 178, 0, 0.50);
+
+}
+
+.main-header .navbar h2 a
+{
+/*    text-shadow:1px 1px blue !important;*/
+font-weight:normal !important;
+margin:20px;
+padding:20px;
+
+text-shadow: 1px 1px grey, 
+2px 2px grey, 
+3px 3px grey;
+}
+
+
+.navbar h2 a:hover
+{
+/*    color:blue;*/
+
+-webkit-transform: translate(3em, 0); 
+/*    -webkit-animation-name: boxPulse;
+-webkit-animation-duration: .7s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: .12s;*/
+}
+
+.navbar a,
+.navbar a:visited {
+    color: rgba(100,100,100,0.5);
+    text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
+    transition: color linear 0.2s, text-shadow linear 0.2s; 
+    -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
+}
+
+
+
+
+/* text-shadow fades to very transparent, font color to nearly opaque
+no extreme values used to improve smoothness of effect */
+
+.navbar a:hover,
+.navbar a.active,
+.navbar a.activeLink {
+    color:rgba(123, 178, 0, 0.7);
+    text-shadow: 0 0 8px rgba(0,0,0,.05) }
+
+/*great animation for bouncing*/
+/*@-webkit-keyframes boxPulse {
+from {
+width: 62px;
+height: 47px;
+
+top: -23px;
+-webkit-animation-timing-function: ease-out;
+}
+50% {
+width: 58px;
+height: 45px;
+top: -19px;
+}
+to {
+width: 62px;
+height: 47px;
+
+top: -23px;
+-webkit-animation-timing-function: ease-out;
+}
+}*/
+
+@-webkit-keyframes resAnimation
+{
+    from 
+    {
+        top: 5%
+    }
+
+    50%
+    {
+        top: 2.5%;
+    }
+
+    to
+    {
+        top: 0%;
+    }
+}
+
+
+@-webkit-keyframes expAnimation
+{
+    from 
+    {
+        top:52%;
+        right: 53px;
+    }
+
+    50%
+    {
+        top:54%;
+        right: 20px;
+    }
+
+    to
+    {
+        top:56%;
+        right: 0px;
+    }
+}
+
+@-webkit-keyframes leaAnimation
+{
+    from 
+    {
+        top:52%;
+        left: 53px;
+    }
+
+    50%
+    {
+        top:50%;
+        left: 20px;
+    }
+
+    to
+    {
+        top:48%;
+        left: 0px;
+    }
+}
+
+
+@-webkit-keyframes creAnimation
+{
+    from 
+    {
+
+        bottom: 0%;
+    }
+
+    50%
+    {
+
+        bottom: 2.5%;
+    }
+
+    to
+    {
+
+        bottom:5%;
+    }
+}
+
+@-webkit-keyframes skiAnimation
+{
+    from 
+    {
+
+        bottom: 5%;
+    }
+
+    50%
+    {
+
+        bottom: 2.5%;
+    }
+
+    to
+    {
+
+        bottom:0%;
+    }
+}
+
+
+
+
+.nav a:hover
+{
+    -webkit-animation-play-state: paused;
+    /*    -webkit-animation-name: animationName;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;*/
+}
+
+
+.nav a
+{
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+}
+
+
+.res a
+{
+    -webkit-animation-name: resAnimation;
+    -webkit-animation-duration: 1.5s;
+}
+
+.exp a
+{
+    -webkit-animation-name: expAnimation;
+    -webkit-animation-duration: 1.6s;
+}
+
+.lea a
+{
+    -webkit-animation-name: leaAnimation;
+    -webkit-animation-duration: 1.7s;
+}
+
+.cre a
+{
+    -webkit-animation-name: creAnimation;
+    -webkit-animation-duration: 1.8s;
+}
+
+.ski a
+{
+    -webkit-animation-name: skiAnimation;
+    -webkit-animation-duration: 1.9s; 
+}
+
+/*shadowbox title color and size*/
+#sb-title-inner {
+font-size: 20px !important;
+line-height:20px !important;
+font-style:italic;
+}
