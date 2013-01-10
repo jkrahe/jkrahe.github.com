@@ -36,8 +36,74 @@
     <!-- js Files -->
     <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
     <script type="text/javascript" src="js/shadowbox.js"></script>
+    <script type="text/javascript" src="js/pause-play-plugin.min.js"></script>
     <script type="text/javascript">
+    $(document).ready(function(){
+        
+        res = {
+            left: $('.nav.res a').offset().left, 
+            top:$('.nav.res a').offset().top
+              }; 
+              
+        elements = [res, 1, 2, 3]; 
+        animateDiv();
+
+    });
+    
+    function makeNewPosition(left, top){
+    
+        // Get viewport dimensions (remove the dimension of the div)
+        // console.log("left: ", left + "  top: ", top); 
+        var w = left;
+        var h = top; 
+        
+        var nh = (h-70)+Math.floor(Math.random() * 25);
+        var nw = (w-120)+Math.floor(Math.random() * 25);
+        return [nw, nh];    
+
+    }
+    
+    function animateDiv(){
+    // console.log(elements[0])
+    var newq = makeNewPosition(elements[0].left, elements[0].top );
+        $('.nav.res a').animate({left: newq[0], top: newq[1]}, function(){
+           animateDiv();        
+         });
+        // $('.nav a').each(function()
+        //    {
+        //        var newq = makeNewPosition($(this));
+        //        $(this).animate({ top: newq[0], left: newq[1] }, function(){
+        //          animateDiv();        
+        //        });
+        //        
+        //        $(this).mouseover(function()
+        //        {
+        //            $(this).animate('pause'); 
+        //        })
+        //        
+        //        $(this).mouseout(function()
+        //        {
+        //            (this).animate('play'); 
+        //        })
+        //    })
+
+        $('.nav a').hover(function()
+        {
+             $(this).pause();
+        })
+        
+        $('.nav a').mouseout(function()
+        {
+            $(this).resume(); 
+        })
+
+    };
+    
+    // setInterval(function(){
+    //     animateDiv()
+    // }, 1000);
     </script>
+    
 
 
 </head>
@@ -53,7 +119,7 @@
             <h4 class="nav res"><a href=""> Resume </a></h4>
             <h1><a id="main-title" href="index.html"> Jimmy Krahe </a></h1>
             <h4 class="nav exp"><a href=""> Experience </a></h4>
-            <h4 class="nav cre"><a href=""> Creative </a></h4>
+            <h4 class="nav cre"><a href=""> Creativity </a></h4>
             <h4 class="nav lea"><a href=""> Leadership </a></h4>
             <h4 class="nav ski"><a href=""> Skills </a></h4>
         </div>

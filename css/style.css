@@ -111,10 +111,7 @@ div
     border-right:2px solid black;
 }
 
-.two.columns:hover
-{
-    
-}
+
 .container .section div
 {
 /*    background-image:url("../images/template.jpg");*/
@@ -150,10 +147,6 @@ div
 
 }
 
-.two.columns a img
-{
-/*    opacity:0;*/
-}
 
 
 
@@ -167,10 +160,10 @@ div
     text-align:center;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
 }
+
 /*if you add more stuff into section you need to change the child numbers*/
 .container .section div:nth-child(8), .section div:nth-child(9)
 {
-
     margin-bottom:20px;
 }
 
@@ -178,6 +171,8 @@ div
 {
     margin-top:60px;
 }
+
+
 
 .main-page
 {
@@ -195,6 +190,7 @@ div
 }
 
 
+
 a
 {
     text-decoration:none;
@@ -210,6 +206,8 @@ a
     /*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
     text-shadow: 0.01em 0.05em rgba(123, 178, 0, 0.5) !important;
 }
+
+
 #main-title, .nav a
 {
     font-family:header;
@@ -218,13 +216,15 @@ a
     /*    text-shadow: 0.01em 0.09em rgba(255,204,10,0.4) !important;*/
 }
 
+
+
 h1 a:hover, .nav a:hover
 {
     position:absolute;
 }
 
 
-h1 a, .nav.lea a, .nav.exp a
+h1 a, .nav.cre a, .nav.ski a
 {
     top:50%;
 }
@@ -256,41 +256,40 @@ h2 a
 {
     left:40%;
     right:40%;
+    top:15%;
     max-width:350px;
-
 }
 
 .nav a
 {
-
     padding:30px;
     font-size:60px;
 }
 
 
-.nav.lea a
-{
-    left:0;
-}
-
-.nav.exp a
-{
-    right:0;
-}
-
-.nav.cre a, .nav.ski a
-{
-    bottom:0;
-}
-
 .nav.cre a
 {
-    left:25%;
+    left:-2%;
 }
 
-.nav.ski a 
+.nav.ski a
 {
-    left:65%;
+    right:2%;
+}
+
+.nav.lea a, .nav.exp a
+{
+    bottom:0 !important;
+}
+
+.nav.lea a
+{
+    left:15%;
+}
+
+.nav.exp a 
+{
+    left:60%;
 }
 
 
@@ -595,6 +594,27 @@ top: -23px;
 }
 }*/
 
+
+/* HAVE TO CHANGE ALL OF THESE IF WE 
+   DECIDE TO STAY WITH CSS TRANSITIONS !!!*/
+@-webkit-keyframes resAnimation
+{
+    from 
+    {
+        top: 15%
+    }
+
+    50%
+    {
+        top: 17.5%;
+    }
+
+    to
+    {
+        top: 20%;
+    }
+}
+
 @-webkit-keyframes resAnimation
 {
     from 
@@ -700,8 +720,6 @@ top: -23px;
 }
 
 
-
-
 .nav a:hover
 {
     -webkit-animation-play-state: paused;
@@ -723,33 +741,36 @@ top: -23px;
 
 .res a
 {
-    -webkit-animation-name: resAnimation;
-    -webkit-animation-duration: 1.5s;
+/*    -webkit-animation-name: resAnimation;
+    -webkit-animation-duration: 1.5s;*/
+    width:50px;
+    height:50px;
 }
 
 .exp a
 {
-    -webkit-animation-name: expAnimation;
-    -webkit-animation-duration: 1.6s;
+/*    -webkit-animation-name: expAnimation;
+    -webkit-animation-duration: 1.6s;*/
 }
 
 .lea a
 {
-    -webkit-animation-name: leaAnimation;
-    -webkit-animation-duration: 1.7s;
+/*    -webkit-animation-name: leaAnimation;
+    -webkit-animation-duration: 1.7s;*/
 }
 
 .cre a
 {
-    -webkit-animation-name: creAnimation;
-    -webkit-animation-duration: 1.8s;
+/*    -webkit-animation-name: creAnimation;
+    -webkit-animation-duration: 1.8s;*/
 }
 
 .ski a
 {
-    -webkit-animation-name: skiAnimation;
-    -webkit-animation-duration: 1.9s; 
+/*    -webkit-animation-name: skiAnimation;
+    -webkit-animation-duration: 1.9s; */
 }
+
 
 /*shadowbox title color and size*/
 #sb-title-inner {
