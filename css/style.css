@@ -275,16 +275,18 @@ h2 a
 .nav.ski a
 {
     right:2%;
+    margin-left:700px;
 }
 
 .nav.lea a, .nav.exp a
 {
-    bottom:0 !important;
+    bottom:5% !important;
 }
 
 .nav.lea a
 {
-    left:15%;
+    margin-left:-650px;
+    left:20% ;
 }
 
 .nav.exp a 
@@ -772,9 +774,26 @@ top: -23px;
 }
 
 
+.nav a
+{
+/*    background-color:red !important;*/
+}
+
 /*shadowbox title color and size*/
 #sb-title-inner {
 font-size: 20px !important;
 line-height:20px !important;
 font-style:italic;
+}
+
+div.box
+{
+    z-index:10;
+    position:absolute;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    margin-top:-100px;
+    margin-bottom:-100px;
 }
