@@ -81,7 +81,8 @@
 
     };
 
-    function makeNewPosition(left, top){
+    function makeNewPosition(left, top)
+    {
 
         // Get viewport dimensions (remove the dimension of the div)
         // console.log("left: ", left + "  top: ", top); 
@@ -94,111 +95,72 @@
 
     }
 
-    function animateDiv(){
+    function animateDiv() 
+    {
 
-        // $('.nav a').mouseover(function() {
-            //      console.log("hit")
-            //    $(this).pause();
-            //  }, function() {
-                //    $(this).resume();
-                //  });
-                // console.log(elements[0])
-                var newq = makeNewPosition(elements[0].left, elements[0].top );
-                $('.nav.res a').animate({left: newq[0], top: newq[1]},600, 'linear', function(){
-                    animateDiv();        
-                });
+        var newq = makeNewPosition(elements[0].left, elements[0].top );
+        $('.nav.res a').animate({left: newq[0], top: newq[1]},600, 'linear', function(){
+            animateDiv();        
+        });
 
 
-                var c = makeNewPosition(elements[1].left, elements[1].top );
-                $('.nav.cre a').animate({ left: c[0], top: c[1]},600, 'linear', function()
-                {
-                    animateDiv(); 
-                }); 
+        var c = makeNewPosition(elements[1].left, elements[1].top );
+        $('.nav.cre a').animate({ left: c[0], top: c[1]},600, 'linear', function()
+        {
+            animateDiv(); 
+        }); 
 
-                var s = makeNewPosition(elements[1].left, elements[1].top );
-                $('.nav.ski a').animate({ left: s[0], top: s[1] },600, 'linear', function()
-                {
-                    animateDiv(); 
-                });
+        var s = makeNewPosition(elements[1].left, elements[1].top );
+        $('.nav.ski a').animate({ left: s[0], top: s[1] },600, 'linear', function()
+        {
+            animateDiv(); 
+        });
 
-                var l = makeNewPosition(elements[2].left, elements[2].bottom); 
-                $('.nav.lea a').animate({ left: l[0], bottom: l[1] },600, 'linear', function()
-                {
-                    animateDiv(); 
-                });
+        var l = makeNewPosition(elements[2].left, elements[2].bottom); 
+        $('.nav.lea a').animate({ left: l[0], bottom: l[1] },600, 'linear', function()
+        {
+            animateDiv(); 
+        });
 
-                var e = makeNewPosition(elements[4].left, elements[4].bottom); 
-                $('.nav.exp a').animate({ left: e[0], bottom: e[1] },600, 'linear', function()
-                {
-                    animateDiv(); 
-                });
+        var e = makeNewPosition(elements[4].left, elements[4].bottom); 
+        $('.nav.exp a').animate({ left: e[0], bottom: e[1] },600, 'linear', function()
+        {
+            animateDiv(); 
+        });
 
-
-                // $('.nav a').each(function(i)
-                //    {
-                    //        var newq = makeNewPosition(elements[i].left, elements[i].top );
-                    //        $(this).animate({ top: newq[0], left: newq[1] }, function(){
-                        //          animateDiv();        
-                        //        });
-                        //        
-                        //        $(this).mouseover(function()
-                        //        {
-                            //            $(this).animate('pause'); 
-                            //        })
-                            //        
-                            //        $(this).mouseout(function()
-                            //        {
-                                //            (this).animate('play'); 
-                                //        })
-                                //    })
-
-
-                                // hover(function()
-                                //  {
-                                    //       $(this).pause();
-                                    //  })
-
-                                    // $('.nav a').mouseout(function()
-                                    // {
-                                        //     $(this).resume(); 
-                                        // })
-
-                                    };
-
-                                    // setInterval(function(){
-                                        //     animateDiv()
-                                        // }, 1000);
-                                        </script>
+    }; 
+    
+    </script>
 
 
 
-                                    </head>
+</head>
 
 <!-- Flush the Buffer Early -->
-<?php flush(); ?>
+    <?php flush(); ?>
 
-<body>
+    <body>
 
-    <div class = "main-page">
+        <div class = "main-page">
 
-        <div class="box">
-            <h4 class="nav res"><a href=""> Resume </a></h4>
-            <h1><a id="main-title" href="index.html"> Jimmy Krahe </a></h1>
-            <h4 class="nav exp"><a href=""> Experience </a></h4>
-            <h4 class="nav cre"><a href=""> Creativity </a></h4>
-            <h4 class="nav lea"><a id="important" href=""> Leadership </a></h4>
-            <h4 class="nav ski"><a href=""> Skills </a></h4>
+            <div class="box">
+                <h4 class="nav res"><a href=""> Resume </a></h4>
+                <h1><a id="main-title" href="index.html"> Jimmy Krahe </a></h1>
+                <h4 class="nav exp"><a href=""> Experience </a></h4>
+                <h4 class="nav cre"><a href=""> Creativity </a></h4>
+                <h4 class="nav lea"><a id="important" href=""> Leadership </a></h4>
+                <h4 class="nav ski"><a href=""> Skills </a></h4>
+            </div>
+
         </div>
-
-    </div>
-    <!-- end of container unit -->
+        <!-- end of container unit -->
 
 
 
-    <!-- might not be necessary right now -->
-    <!-- <div class = "footer">
-    <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
-    </div> -->
+        <!-- might not be necessary right now -->
+        <!-- <div class = "footer">
+        <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+        </div> -->
 
 <!-- end of content / hero unit-->
 
@@ -210,3 +172,51 @@
 
 </body>
 </html>
+<script>
+
+// $('.nav a').mouseover(function() {
+    //      console.log("hit")
+    //    $(this).pause();
+    //  }, function() {
+        //    $(this).resume();
+        //  });
+        // console.log(elements[0])
+        
+        
+        
+    // $('.nav a').each(function(i)
+    //    {
+        //        var newq = makeNewPosition(elements[i].left, elements[i].top );
+        //        $(this).animate({ top: newq[0], left: newq[1] }, function(){
+            //          animateDiv();        
+            //        });
+            //        
+            //        $(this).mouseover(function()
+            //        {
+                //            $(this).animate('pause'); 
+                //        })
+                //        
+                //        $(this).mouseout(function()
+                //        {
+                    //            (this).animate('play'); 
+                    //        })
+                    //    })
+
+
+                    // hover(function()
+                    //  {
+                        //       $(this).pause();
+                        //  })
+
+                        // $('.nav a').mouseout(function()
+                        // {
+                            //     $(this).resume(); 
+                            // })
+
+                            // };
+
+                            // setInterval(function(){
+                                //     animateDiv()
+                                // }, 1000);
+                                // }
+    </script>
