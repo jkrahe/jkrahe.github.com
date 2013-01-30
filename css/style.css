@@ -42,7 +42,7 @@ body
     /*makes bg resize with window*/
     /*        background-size: 100%;*/
     font-family: 'Oranienbaum';
-/*    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+    /*    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
     background-repeat: no-repeat;
     background-position:top center;
     padding:0px;
@@ -51,7 +51,7 @@ body
 
 .main-header
 {
-  padding-bottom:50px;
+    padding-bottom:50px;
 }
 
 .main-header h2
@@ -96,6 +96,10 @@ div
 /*    display:block;*/
 }
 
+.container
+{
+    text-align:center;
+}
 
 .container .two.columns
 {
@@ -152,30 +156,33 @@ div
 .container .section div
 {
 /*    background-image:url("../images/template.jpg");*/
-    margin-top:50px;
-    -webkit-transition:all 0.6s ease; /* Remember vendor prefixes! */
-    background-position:top; 
-    border-radius:10px;
-    -webkit-box-shadow:
-    inset 0 0 20px blue,
-    inset 0 0 20px blue,
-    inset 0 0 20px blue;
+margin-top:50px;
+-webkit-transition:all 0.9s ease; /* Remember vendor prefixes! */
+-moz-transition:all 0.9s ease;
 
-    -moz-box-shadow:
-    inset 0 0 50px #000,
-    inset 0 0 50px #000,
-    inset 0 0 50px #000;
+background-position:top; 
+border-radius:10px;
+-webkit-box-shadow:
+inset 0 0 20px blue,
+inset 0 0 20px blue,
+inset 0 0 20px blue;
+
+-moz-box-shadow:
+inset 0 0 50px #000,
+inset 0 0 50px #000,
+inset 0 0 50px #000;
 /*    rgba(123, 178, 0, 0.5)*/
-    box-shadow:
-    inset 0 0 10px rgba(150,150,150, 0.5),
-    inset 0 0 10px rgba(150,150,150, 0.5),
-    inset 0 0 10px rgba(150,150,150, 0.5);
-    /*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
+box-shadow:
+inset 0 0 10px rgba(150,150,150, 0.5),
+inset 0 0 10px rgba(150,150,150, 0.5),
+inset 0 0 10px rgba(150,150,150, 0.5);
+/*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
 }
 
 .container .section div:hover
 {
-    -webkit-transition:all 0.6s ease;
+    -webkit-transition:all 0.9s ease;
+    -moz-transition:all 0.9s ease;
     cursor: pointer; 
     cursor: hand
     -webkit-box-shadow: none;
@@ -189,13 +196,14 @@ div
 
 .container .section h1
 {
+    /*figure out a way to center this with javascript*/
     color:white;
     position:absolute;
     padding:10px;
-    margin-left:70px;
-    font-size:40px;
+    margin-left:80px;
+    font-size:160%;
     text-align:center;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Economica', sans-serif;
 }
 
 /*if you add more stuff into section you need to change the child numbers*/
@@ -212,49 +220,10 @@ div
 
 
 
-
-
-
-
-
-
-
-/*animation*/
-/*you need to create some for firefox and opera*/
-/* see you're hw3 part 4 css for details*/
-/*safari & chrome*/
-@-webkit-keyframes animationName {
-    0% {
-        margin-top: +20px;
-        margin-left:-10px;;
-        /*        color: red;*/
-
-    }
-    50% {
-        margin-top: -20px;
-        margin-left:+10px;
-        /*        color: blue;*/
-    }
-    100% {
-        /*        left: -20%;*/
-        /*        color: green;*/
-    }
-}
-/*test out some more*/
-.nav a{
-    /*  -webkit-animation-name: animationName;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;*/
-}
-
-
-
 .main-header a
 {
     color:white;
-/*    font-family:header;*/
+    /*    font-family:header;*/
     text-shadow: 0.01em 0.09em #000 !important;
 }
 
@@ -262,11 +231,6 @@ div
 {
     font-size:40px !important;
 }
-
-
-
-
-
 
 
 
@@ -407,10 +371,10 @@ a.transition
     height:80px;
     padding-top:40px;
     text-align: center;
-    /*    box-shadow: -3px -3px 3px #387CB9;*/
-    /*    -webkit-box-shadow: 0px -3px 3px #CCC;
-    -webkit-box-shadow: 0px 3px 3px #CCC;*/
+
+    -moz-box-shadow: 1px 1px rgba(123, 178, 0, 0.5), 2px 2px rgba(123, 178, 0, 0.5), 3px 3px rgba(123, 178, 0, 0.50), 4px 4px rgba(123, 178, 0, 0.50), 5px 5px rgba(123, 178, 0, 0.50);
     -webkit-box-shadow: 1px 1px rgba(123, 178, 0, 0.5), 2px 2px rgba(123, 178, 0, 0.5), 3px 3px rgba(123, 178, 0, 0.50), 4px 4px rgba(123, 178, 0, 0.50), 5px 5px rgba(123, 178, 0, 0.50);
+    box-shadow: 1px 1px rgba(123, 178, 0, 0.5), 2px 2px rgba(123, 178, 0, 0.5), 3px 3px rgba(123, 178, 0, 0.50), 4px 4px rgba(123, 178, 0, 0.50), 5px 5px rgba(123, 178, 0, 0.50);
 
 }
 
@@ -432,6 +396,7 @@ text-shadow: 1px 1px grey,
 /*    color:blue;*/
 
 -webkit-transform: translate(3em, 0); 
+-moz-transform: translate(3em, 0);
 /*    -webkit-animation-name: boxPulse;
 -webkit-animation-duration: .7s;
 -webkit-animation-iteration-count: infinite;
@@ -444,6 +409,7 @@ text-shadow: 1px 1px grey,
     text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
     transition: color linear 0.2s, text-shadow linear 0.2s; 
     -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
+    -moz-transition:color linear 0.4s, text-shadow linear 0.4s;
 }
 
 
@@ -456,217 +422,13 @@ no extreme values used to improve smoothness of effect */
 .navbar a.active,
 .navbar a.activeLink {
     color:rgba(123, 178, 0, 0.7);
-    text-shadow: 0 0 8px rgba(0,0,0,.05) }
-
-/*great animation for bouncing*/
-/*@-webkit-keyframes boxPulse {
-from {
-width: 62px;
-height: 47px;
-
-top: -23px;
--webkit-animation-timing-function: ease-out;
-}
-50% {
-width: 58px;
-height: 45px;
-top: -19px;
-}
-to {
-width: 62px;
-height: 47px;
-
-top: -23px;
--webkit-animation-timing-function: ease-out;
-}
-}*/
-
-
-/* HAVE TO CHANGE ALL OF THESE IF WE 
-   DECIDE TO STAY WITH CSS TRANSITIONS !!!*/
-@-webkit-keyframes resAnimation
-{
-    from 
-    {
-        top: 15%
-    }
-
-    50%
-    {
-        top: 17.5%;
-    }
-
-    to
-    {
-        top: 20%;
-    }
+    text-shadow: 0 0 8px rgba(0,0,0,.05) 
 }
 
-@-webkit-keyframes resAnimation
-{
-    from 
-    {
-        top: 5%
-    }
-
-    50%
-    {
-        top: 2.5%;
-    }
-
-    to
-    {
-        top: 0%;
-    }
-}
-
-
-@-webkit-keyframes expAnimation
-{
-    from 
-    {
-        top:52%;
-        right: 53px;
-    }
-
-    50%
-    {
-        top:54%;
-        right: 20px;
-    }
-
-    to
-    {
-        top:56%;
-        right: 0px;
-    }
-}
-
-@-webkit-keyframes leaAnimation
-{
-    from 
-    {
-        top:52%;
-        left: 53px;
-    }
-
-    50%
-    {
-        top:50%;
-        left: 20px;
-    }
-
-    to
-    {
-        top:48%;
-        left: 0px;
-    }
-}
-
-
-@-webkit-keyframes creAnimation
-{
-    from 
-    {
-
-        bottom: 0%;
-    }
-
-    50%
-    {
-
-        bottom: 2.5%;
-    }
-
-    to
-    {
-
-        bottom:5%;
-    }
-}
-
-@-webkit-keyframes skiAnimation
-{
-    from 
-    {
-
-        bottom: 5%;
-    }
-
-    50%
-    {
-
-        bottom: 2.5%;
-    }
-
-    to
-    {
-
-        bottom:0%;
-    }
-}
-
-
-.nav a:hover
-{
-    -webkit-animation-play-state: paused;
-    /*    -webkit-animation-name: animationName;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;*/
-}
-
-
-.nav a
-{
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-}
-
-
-.res a
-{
-/*    -webkit-animation-name: resAnimation;
-    -webkit-animation-duration: 1.5s;*/
-    width:50px;
-    height:50px;
-}
-
-.exp a
-{
-/*    -webkit-animation-name: expAnimation;
-    -webkit-animation-duration: 1.6s;*/
-}
-
-.lea a
-{
-/*    -webkit-animation-name: leaAnimation;
-    -webkit-animation-duration: 1.7s;*/
-}
-
-.cre a
-{
-/*    -webkit-animation-name: creAnimation;
-    -webkit-animation-duration: 1.8s;*/
-}
-
-.ski a
-{
-/*    -webkit-animation-name: skiAnimation;
-    -webkit-animation-duration: 1.9s; */
-}
-
-
-.nav a
-{
-/*    background-color:red !important;*/
-}
 
 /*shadowbox title color and size*/
 #sb-title-inner {
-font-size: 20px !important;
-line-height:20px !important;
-font-style:italic;
+    font-size: 20px !important;
+    line-height:20px !important;
+    font-style:italic;
 }
