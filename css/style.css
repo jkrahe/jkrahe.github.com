@@ -10,10 +10,16 @@
     src: url();
 }
 
-h1 a, h4 a
+h1 a, h2 a, h4 a
 {
     font-family:'Economica', sans-serif;
+    text-decoration:none;
     font-weight:700;
+}
+
+h2 a
+{
+    font-weight:400 !important;
 }
 
 .cover p
@@ -30,7 +36,7 @@ body
     background-image: url('../img/new-bg.jpg');
     /*makes bg resize with window*/
     /*        background-size: 100%;*/
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Oranienbaum';
 /*    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
     background-repeat: no-repeat;
     background-position:top center;
@@ -38,6 +44,10 @@ body
     margin:0px;
 }
 
+.main-header
+{
+  padding-bottom:50px;
+}
 
 .main-header h2
 {
@@ -49,11 +59,18 @@ body
     padding:10px;
 }
 
+.main-header h1
+{
+    text-align:center;
+    padding-bottom:25px;
+}
+
 .main-header h1 a
 {
-    color:white !important;
     position:relative;
-    text-shadow: 0.01em 0.05em rgba(123, 178, 0, 0.5) !important;
+    font-size:500%;
+    color:rgba(123, 178, 0, 1);
+    text-shadow: 0.01em 0.05em rgba(120, 120, 120, 0.5) !important;
 }
 
 .main-header
@@ -286,7 +303,7 @@ a.transition
 .main-header a
 {
     color:white;
-    font-family:header;
+/*    font-family:header;*/
     text-shadow: 0.01em 0.09em #000 !important;
 }
 
