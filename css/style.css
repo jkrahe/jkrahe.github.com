@@ -10,10 +10,15 @@
     src: url();
 }
 
+a
+{
+    text-decoration:none !important;
+}
+
+
 h1 a, h2 a, h4 a
 {
     font-family:'Economica', sans-serif;
-    text-decoration:none;
     font-weight:700;
 }
 
@@ -244,6 +249,96 @@ div
     -webkit-animation-timing-function: ease-in-out;*/
 }
 
+
+
+.main-header a
+{
+    color:white;
+/*    font-family:header;*/
+    text-shadow: 0.01em 0.09em #000 !important;
+}
+
+.main-header h2 a
+{
+    font-size:40px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* section css */
+.page-title
+{
+    z-index:1;
+    left:0;
+    right:0;
+    position:relative;
+}
+
+.left.arrow .label, .right.arrow .label
+{
+    font-size:150%;
+}
+
+.left.arrow .label, .right.arrow .label
+{
+    color:white;
+}
+
+
+.left.arrow .label
+{
+    margin-right:30px;
+}
+
+.right.arrow .label
+{
+    margin-left:30px;
+}
+
+.left.arrow, .right.arrow
+{
+    position:relative;
+    width:300px;
+    float:left;
+}
+
+.right.arrow
+{
+    float:right;  
+}
+
+
+.section-header h2 a
+{
+    font-size:170% !important;
+    color:white;
+    top:15px;
+}
+
+
+.section-header
+{
+    position:relative;
+    height:100px;
+    width:850px;
+    left:50%;
+    text-align:center;
+}
+
+.section-header a
+{
+    font-weight:400 !important;
+    font-family:'Economica', sans-serif;
+}
+
 .section-header h2
 {
     display:inline;
@@ -280,106 +375,18 @@ a.transition
 
 
 
-.left, .right
+.left.arrow .label, .right.arrow .label
 {
     opacity:0.7;
     -webkit-transition:opacity 0.5s ease;  
     -moz-transition:opacity 0.5s ease; 
 }
 
-.left.hidden, .right.hidden, .hidden
+.left.arrow .hidden, .right.arrow .hidden, .hidden
 {
     opacity:0;
     -webkit-transition:opacity 0.5s ease;
     -moz-transition:opacity 0.5s ease; 
-}
-
-
-.left a:nth-child(1), .right a:nth-child(1)
-{
-    font-size:20px !important;
-}
-
-.main-header a
-{
-    color:white;
-/*    font-family:header;*/
-    text-shadow: 0.01em 0.09em #000 !important;
-}
-
-.main-header h2 a
-{
-    font-size:40px !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* section css */
-.page-title
-{
-    z-index:1;
-    left:0;
-    right:0;
-    position:absolute;
-}
-
-.left
-{
-    top:-25px;  
-    left:-5%;
-    position:relative;
-}
-
-.right
-{
-    top:-25px;
-    left:15% !important;
-    position:relative;
-}
-
-
-.section-header h2 a
-{
-    font-size:25px !important;
-    color:white;
-}
-
-.section-header
-{
-
-    position:relative;
-    height:100px;
-
-}
-
-.left + a.transition
-{
-    position:relative;
-    top:-20px;
-    margin-right:20%;
-    z-index:3;
-    /*    left:25%;*/
-}
-
-.right + a.transition
-{
-    position:relative;
-    top:-20px;
-    left:-5% !important;
-    z-index:3;
-}
-
-.section-header *
-{
-
 }
 
 

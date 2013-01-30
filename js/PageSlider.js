@@ -6,23 +6,23 @@ function initializeSlider()
     // console.log($(section));
     leftIcon.bind('mouseover', function()
     {
-        $('.hidden.left').removeClass("hidden"); 
+        $('.hidden.lft.label').removeClass("hidden"); 
     }); 
 
     leftIcon.bind('mouseout', function()
     {
-        $('.left').addClass("hidden"); 
+        $('.lft.label').addClass("hidden"); 
     }); 
 
 
     rightIcon.bind('mouseover', function()
     {
-        $('.hidden.right').removeClass("hidden"); 
+        $('.hidden.rght.label').removeClass("hidden"); 
     }); 
 
     rightIcon.bind('mouseout', function()
     {
-        $('.right').addClass("hidden"); 
+        $('.rght.label').addClass("hidden"); 
     });
     
     

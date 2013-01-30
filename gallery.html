@@ -129,18 +129,21 @@
             <div id = "digital-sculptures" class="">
 
                 <div class = "section-header">
-                    <h2 class="hidden left">
-                        <a>Prev</a>
-                    </h2>
-
-                    <a class="transition" href="h.html"><i class="foundicon-left-arrow icons"></i></a> 
+                    
+                    <div class="left arrow">
+                    <a class="hidden lft label">Prev</a>
+                         <a class="transition" href="h.html"><i class="foundicon-left-arrow icons"></i></a>
+                    </div>
 
                     <h2 >
                         <a class = "page-title"> Digital Sculptures</a>
                     </h2> 
+                    
+                    <div class="right arrow">
+                         <a class="transition" href="h.html"><i class="foundicon-right-arrow icons"></i></a> 
+                         <a class="hidden rght label">2d Sculptures</a>
+                    </div>
 
-                    <h2 class = "hidden right"><a> 2D Sculptures </a></h2>
-                    <a class="transition" href="h.html"><i class="foundicon-right-arrow icons"></i></a>
                 </div>
 
 
@@ -240,6 +243,9 @@
 
 $(document).ready(function()
 {
+    // awesome centering technique
+    var marginDiff = -1*($('.section-header').width()/2); 
+    $('.section-header').css('margin-left', marginDiff); 
 
     // initialize website
 
