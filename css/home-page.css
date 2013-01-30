@@ -2,7 +2,7 @@
 div.main-page
 {
     position:absolute;
-    background-color:rgba(240,180,120,0.5);
+/*    background-color:rgba(240,180,120,0.1);*/
     /*centering tweaks done with jquery see index.html*/
     left:50%;
     width:1000px;
@@ -18,29 +18,36 @@ div.main-page
 
 .main-page h4, .main-page h1
 {
-    background-color:rgba(120,240,120,0.5);
-    width:150px;
-    height:100px;
-    margin:10px;
-    text-align:center;
+/*    background-color:rgba(120,240,120,0.5);*/
+width:150px;
+height:100px;
+margin:10px;
+text-align:center;
 }
 
 .main-page h1 a
 {
-    font-size:100px;
+    font-size:700%;
+    color:rgba(123, 178, 0, 1);	
+    text-shadow: 2px 20px 10px rgba(0, 0, 0,.6)
+}
+
+.main-page h4 a
+{
+    font-size:300%;
 }
 
 .main-page h1
 {
-    width:300px;
-    height:200px;
+    width:500px;
+    height:100px;
 }
 
 .main-page a
 {
     position:relative;
-    left:0;
-    right:0;
+/*    left:0;
+    right:0;*/
     text-decoration:none;
 }
 
@@ -61,6 +68,10 @@ div.main-page
     right:0;
 }
 
+.main-page .nav.cre, .main-page .nav.lea
+{
+    left:0;
+}
 .main-page .nav.ski, .main-page .nav.exp
 {
     float:right;
@@ -114,57 +125,4 @@ no extreme values used to improve smoothness of effect */
 }
 
 
-
-
-
-.cover
-{
-    position:absolute;
-    background-image:url('../img/cover-bg.png');
-    background-repeat:repeat;
-    background-color:white;
-    color:white;
-    width:100%;
-    height:100%;
-    z-index:10;
-    text-align:center;
-}
-
-.cover h1
-{
-    font-family:'Economica', sans-serif;
-    font-weight:700;
-    margin-top:100px;
-    color:rgba(100,100,100,1);
-    font-size:7em;
-    text-shadow:1px 1px 10px rgba(190,190,190,1);
-    margin-bottom:50px;
-}
-
-.cover p
-{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    font-size:2em;
-    text-shadow:1px 1px 10px rgba(190,190,190,0.2);
-}
-
-.cover a 
-{
-    text-decoration:none;
-    color:red;
-    text-shadow:none;
-    opacity:0.6;
-}
-
-.cover a:hover
-{
-    opacity:1;
-}
-
-.cover div
-{
-    width:100%;
-    height:250px;
-    background-color:rgba(120,120,120,0.7);
-}
 
