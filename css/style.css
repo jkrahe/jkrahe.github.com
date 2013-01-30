@@ -174,161 +174,11 @@ div
 
 
 
-.main-page
-{
-
-    left:0;
-    right:0;
-    bottom:40;
-    top:0;
-    margin:40px;
-    min-height:650px;
-    min-width: 1000px;
-    position:absolute;
-    text-align:center;
-
-}
-
-
-
-a
-{
-    text-decoration:none;
-}
-
-#main-title
-{
-    left:0;
-    right:0;
-    /*    #387CB9*/
-    /* #7BB200*/
-    /*rgba(123, 178, 0, 1)*/
-    /*    text-shadow: 0.01em 0.09em rgba(56, 124, 185,0.3) !important;*/
-    text-shadow: 0.01em 0.05em rgba(123, 178, 0, 0.5) !important;
-}
-
-
-#main-title, .nav a
-{
-    font-family:header;
-    position:absolute;
-    color:white;
-    /*    text-shadow: 0.01em 0.09em rgba(255,204,10,0.4) !important;*/
-}
-
-
-
-h1 a:hover, .nav a:hover
-{
-    position:absolute;
-}
-
-
-h1 a, .nav.cre a, .nav.ski a
-{
-    top:50%;
-}
-
-h1 a, h2 a, h3 a
-{
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
-    font-size:120px;
-    margin-top:-5%;
-    text-shadow: 0.01em 0.09em #000 !important;
-}
-
-h1 a
-{
-    font-family:header;
-}
-
-h2 a 
-{
-    font-size:30px !important;
-}
-
-.container h1
-{
-    font-size:20px !important;
-}
-
-.nav.res a
-{
-    left:40%;
-    right:40%;
-    top:15%;
-    max-width:350px;
-}
-
-.nav a
-{
-    padding:30px;
-    font-size:60px;
-}
-
-
-.nav.cre a
-{
-    left:-2%;
-}
-
-.nav.ski a
-{
-    right:2%;
-    margin-left:700px;
-}
-
-.nav.lea a, .nav.exp a
-{
-    bottom:5% !important;
-}
-
-.nav.lea a
-{
-    margin-left:-650px;
-    left:20% ;
-}
-
-.nav.exp a 
-{
-    left:60%;
-}
-
-
-.footer
-{
-    color:white;
-    border:2px red dashed;
-    margin:20px;
-}
 
 
 
 
 
-
-/* Navigation Blur */
-
-.nav a,
-.nav a:visited {
-    color: rgba(255,255,255,0.01);
-    text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
-    transition: color linear 0.2s, text-shadow linear 0.2s; 
-    -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
-}
-
-
-
-
-/* text-shadow fades to very transparent, font color to nearly opaque
-no extreme values used to improve smoothness of effect */
-
-.nav a:hover,
-.nav a:active,
-.nav a:focus,
-.nav a.activeLink {
-    color: white;
-    text-shadow: 0 0 8px rgba(0,0,0,.05) }
 
 
 
@@ -431,11 +281,7 @@ a.transition
 }
 
 
-.main-page
-{
-    margin:120px;
-    margin-bottom:80px !important;
-}
+
 
 
 
@@ -784,16 +630,4 @@ top: -23px;
 font-size: 20px !important;
 line-height:20px !important;
 font-style:italic;
-}
-
-div.box
-{
-    z-index:10;
-    position:absolute;
-    height:100%;
-    width:100%;
-    margin:0;
-    padding:0;
-    margin-top:-100px;
-    margin-bottom:-100px;
 }
