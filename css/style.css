@@ -1,4 +1,4 @@
-@font-face
+/*@font-face
 {
     font-family:header;
     src: url("../fonts/Plakatbau.ttf");
@@ -8,7 +8,7 @@
 {
     font-family:content;
     src: url();
-}
+}*/
 
 a
 {
@@ -51,7 +51,7 @@ body
 
 .main-header
 {
-    padding-bottom:50px;
+    padding-bottom:20px;
 }
 
 .main-header h2
@@ -197,7 +197,7 @@ inset 0 0 10px rgba(150,150,150, 0.5);
 .container .section h1
 {
     /*figure out a way to center this with javascript*/
-    color:white;
+    color:rgba(255,255,255,0.8);
     position:absolute;
     padding:10px;
     margin-left:80px;
@@ -283,7 +283,7 @@ inset 0 0 10px rgba(150,150,150, 0.5);
 .section-header h2 a
 {
     font-size:170% !important;
-    color:white;
+    color:rgba(255,255,255,0.8);
     top:15px;
 }
 
@@ -291,7 +291,7 @@ inset 0 0 10px rgba(150,150,150, 0.5);
 .section-header
 {
     position:relative;
-    height:100px;
+    height:50px;
     width:850px;
     left:50%;
     text-align:center;
@@ -368,6 +368,8 @@ a.transition
     position:relative !important;
     background-color:rgba(0,0,0,0.5);
     margin:20px;
+    width:1000px;
+    left:50%;
     height:80px;
     padding-top:40px;
     text-align: center;
@@ -431,4 +433,24 @@ no extreme values used to improve smoothness of effect */
     font-size: 20px !important;
     line-height:20px !important;
     font-style:italic;
+}
+
+.footer
+{
+    position:relative;
+    border-top:1px solid rgba(123, 178, 0, 1);
+    height:200px;
+    left:50%;
+    width:800px;
+    text-align:center;
+}
+
+.footer p
+{
+    margin-top:10px;
+    font-size:20px;
+    font-family:'Economica', sans-serif;
+    font-weight:700;
+/*    text-shadow:1px 1px 3px rgba(160,160,160,1);*/
+    color:rgba(255,255,255,0.8);
 }
