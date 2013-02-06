@@ -454,3 +454,17 @@ no extreme values used to improve smoothness of effect */
 /*    text-shadow:1px 1px 3px rgba(160,160,160,1);*/
     color:rgba(255,255,255,0.8);
 }
+
+.footer .contact img
+{
+    -webkit-transition:all 0.7s ease; /* Remember vendor prefixes! */
+    -moz-transition:all 0.7s ease;
+    opacity:0.7;
+}
+
+.footer .contact img:hover
+{
+    -webkit-transition:all 0.7s ease; /* Remember vendor prefixes! */
+    -moz-transition:all 0.7s ease;
+    opacity:1;
+}

@@ -12,21 +12,26 @@
     margin-bottom:50px;
     border-radius:10px;
     
-    -webkit-transition:all 0.6s ease;
+/*    -webkit-transition:all 0.6s ease;*/
+}
+
+#experience .eight.columns.first p
+{
+
 }
 
 #experience .eight.columns:hover
 {
-    -webkit-transition:all 0.6s ease;
-    -webkit-transform:scale(1.7);
+/*    -webkit-transition:all 0.6s ease;
+    -webkit-transform:scale(1.7);*/
     z-index:5;
 }
 
-#experience .eight.columns.first:hover
+/*#experience .eight.columns.first:hover
 {
     top:100px !important;
     left:20%;
-}
+}*/
 
 #experience .eight.columns.second:hover
 {
