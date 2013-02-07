@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="css/experience.css">
 
     <!-- jQuery Calls -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script> -->
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
@@ -51,35 +51,7 @@
             window.location = linkLocation;
         }
 
-        var div1 = $('#experience .eight.columns.first').mouseover(function()
-        {
-            // top:100px !important;
-            // left:20%;
-            $(this).effect('scale', {scale:'content',percent:150}, 1000);
-            // $(this).animate({ 
-            //     left: '20%', 
-            //     top: '100px'
-            // },700, function() {           
-            //     // animateDiv(); 
-            // });
-        }); 
-        
-        
-        var div1 = $('#experience .eight.columns.first').mouseout(function()
-        {
-            // top:100px !important;
-            // left:20%;
-            $(this).effect('scale', {scale:'content',percent:100}, 1000);
-            // $(this).animate({ 
-            //     left: '0', 
-            //     top: '0'
-            // },700, function() {           
-            //     // animateDiv(); 
-            // });
-        });
-        
-        
-    });
+    }); 
     </script>
 </head>
 
@@ -133,11 +105,11 @@
                         </div>
 
                         <div class="eight columns second">   
-
+dddd
                         </div>    
 
                         <div class="eight columns third">   
-
+fff
                         </div>
 
                         <div class="eight columns fourth">   
@@ -160,15 +132,15 @@
                 <!-- footer -->
                 <div class="footer">
                     <div class="contact">
-                        <a href="mailto:nhurt@cmu.edu" target="_blank">
-                            <img src="img/Footer/GM.png" width="25" height="25">
+                        <!-- <a href="mailto:nhurt@cmu.edu" target="_blank">
+                        <img src="img/Footer/GM.png" width="25" height="25">
                         </a>
                         <a href="http://vimeo.com/nicolashurt" target="_blank">
-                            <img src="img/Footer/VIM.png" width="25" height="25">
+                        <img src="img/Footer/VIM.png" width="25" height="25">
                         </a>
                         <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
-                            <img src="img/Footer/LI.png" width="25" height="25">
-                        </a>
+                        <img src="img/Footer/LI.png" width="25" height="25">
+                        </a> -->
                         <a href="https://www.facebook.com/nicolas.hurt.1" target="_blank">
                             <img src="img/Footer/fb.png" width="40" height="40">
                         </a>
@@ -207,6 +179,8 @@
 <script src="js/modernizr-1.7.min.js"></script>
 <script src="js/PageSlider.js"></script>
 <script src="js/Centering.js"></script>
+<script src="js/jquery.transform.js"></script>
+<script src="js/ExperienceScale.js"></script>
 
 <script type="text/javascript">
 

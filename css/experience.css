@@ -11,44 +11,31 @@
     position:relative;
     margin-bottom:50px;
     border-radius:10px;
-    
-/*    -webkit-transition:all 0.6s ease;*/
 }
 
-#experience .eight.columns.first p
+#experience .eight.columns:hover 
 {
-
+ z-index:5;
 }
 
-#experience .eight.columns:hover
-{
-/*    -webkit-transition:all 0.6s ease;
-    -webkit-transform:scale(1.7);*/
-    z-index:5;
-}
 
-/*#experience .eight.columns.first:hover
-{
-    top:100px !important;
-    left:20%;
-}*/
 
 #experience .eight.columns.second:hover
 {
-    top:100px !important;
-    left:-20%;
+/*    top:100px !important;
+    left:-20%;*/
 }
 
 #experience .eight.columns.third:hover
 {
-    left:20%;
-    top:-150px !important;
+/*    left:20%;
+    top:-150px !important;*/
 }
 
 #experience .eight.columns.fourth:hover
 {
-    left:-20%;
-    top:-150px !important;
+/*    left:-20%;
+    top:-150px !important;*/
 }
 
 .eight.columns .image
