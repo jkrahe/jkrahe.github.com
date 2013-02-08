@@ -166,7 +166,7 @@ a.transition
         -ms-transition: all 1s ease;
             transition: all 1s ease;
 }
-.container .section .two.columns:hover
+.container .section .two.columns.hover
 {
     border:7px solid rgba(123,178,0, 0.7);
     -webkit-transition: all 1s ease;
@@ -185,7 +185,7 @@ a.transition
 .container .section div
 {
 
-    border:7px solid black;
+    border:7px solid rgba(255,255,255,0.4);
     overflow:hidden;
     margin-top:50px;
     background-color:grey;
