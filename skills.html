@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
     <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons.css">
+    <link rel="stylesheet" href="css/skills.css">
+    
 
     <!-- jQuery Calls -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -43,33 +45,49 @@
     });
     
     $(document).ready(function() {
+        
+        // $(".shadowbox img").hover(
+        // function() {
+        // $(this).stop().animate({"opacity": "1"}, "100");
+        // },
+        // function() {
+        // $(this).stop().animate({"opacity": "0.6"}, "100");
+        // });
 
         $(".two.columns").click(function()
         {
-            var img = $(this).find("a"); 
-            Shadowbox.open({
-                content:    img.attr("href"),
-                player:     "img",
-                title:      img.attr("title")
-            });
-            
-            // set up all anchor elements with a "movie" class to work with Shadowbox
-            Shadowbox.setup("a.movie", {
-                gallery:            "My Movies",
-                autoplayMovies:     true
-            });
+            // var img = $(this).find("a"); 
+            // Shadowbox.open({
+            //     content:    img.attr("href"),
+            //     player:     "img",
+            //     title:      img.attr("title")
+            // });
+            // 
+            // // set up all anchor elements with a "movie" class to work with Shadowbox
+            // Shadowbox.setup("a.movie", {
+            //     gallery:            "My Movies",
+            //     autoplayMovies:     true
+            // });
         }); 
 
 
-        $('.two.columns').each(function()
+        // $('.two.columns').each(function()
+        // {
+        //     var a = $(this).find('a')
+        //     var img = $(this).find('img')
+        //     $(this).css("background-image", 'url('+ a.attr('href')+')'); 
+        //     $(this).css({ 'background-size': '100% 190%'}); 
+        //     img.css('src', a.attr('href')); 
+        //     img.css('visibility', 'hidden'); 
+        // }); 
+        
+        $('.shadowbox').each(function()
         {
-            var a = $(this).find('a')
-            var img = $(this).find('img')
-            $(this).css("background-image", 'url('+ a.attr('href')+')'); 
-            $(this).css({ 'background-size': '100% 190%'}); 
-            img.css('src', a.attr('href')); 
-            img.css('visibility', 'hidden'); 
-        }); 
+             var a = $(this).attr('href')
+             console.log("the a's: ", a); 
+             var img = $(this).find('img')
+             img.attr('src', a); 
+        });
 
         // changing a specific elements dimensions for the div
         $('a[title="Beast Quad"]').parent().css({'background-size': '130% 100%'});
@@ -157,25 +175,23 @@
                 <div class="container">
                     <div class = "section one">
                         <h1> Digital Sculptures </h1>
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Alien"><img src=""/></a>  </div>
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/alien.png" rel="shadowbox" title="Alien"><img src=""/></a>  </div>
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/baldy-copy.png" rel="shadowbox" title="Baldy"><img src=""/></a>  </div>  
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/beast_quad.png" rel="shadowbox" title="Beast Quad"><img src=""/></a>  </div>  
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/demonWIP.jpg" rel="shadowbox[Demon]" title="Demon WIP"><img src=""/></a>  </div>  
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/DemonWipBack.png" rel="shadowbox[Demon]" title="Demon WIP"><img src=""/></a>  </div>  
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/demonWIP.jpg" rel="shadowbox[Demon]" title="Demon WIP"><img src=""/></a>  </div>  
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/dino.png" rel="shadowbox" title="Dino"><img src=""/></a>  </div>  
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/ironman_front.png" rel="shadowbox" title="Ironman"><img src=""/></a>  </div>  
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/mandude.jpg" rel="shadowbox" title="Man Dude"><img src=""/></a>  </div>  
-
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/old-men.jpeg" rel="shadowbox" title="Old Skinny Man"><img src=""/></a>  </div>   
-
-                        <div class="two columns"> <a href="images/3d/digital-sculptures/old-men2.jpeg" rel="shadowbox" title="Old Chubby Man"><img src=""/></a>  </div>  
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox[Demons]" title="Alien">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>  
+                        
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Alien">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox[Demons]" title="Alien">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+                      
 
 
                     </div>
