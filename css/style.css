@@ -196,11 +196,8 @@ inset 0 0 10px rgba(150,150,150, 0.5);
 
 .container .section h1
 {
-    /*figure out a way to center this with javascript*/
     color:rgba(255,255,255,0.8);
-    position:absolute;
     padding:10px;
-    margin-left:80px;
     font-size:160%;
     text-align:center;
     font-family: 'Economica', sans-serif;
@@ -468,3 +465,4 @@ no extreme values used to improve smoothness of effect */
     -moz-transition:all 0.7s ease;
     opacity:1;
 }
+

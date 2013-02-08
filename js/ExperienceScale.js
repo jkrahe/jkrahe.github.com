@@ -15,9 +15,10 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
 }).mouseleave(function()
 {
     $(this).animate({
-        z:0,
         transform: 'translateX(0px) translateY(0px) scale(1)'
-    });
+    },     function(){
+            $(this).css({'z-index' : '0'
+        }););
 });
 
 // top right div
