@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
     <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons.css">
     <link rel="stylesheet" href="css/skills.css">
-    
+
 
     <!-- jQuery Calls -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -43,98 +43,90 @@
         displayNav: true,
         modal: false
     });
-    
+
     $(document).ready(function() {
-        
+
         // $(".shadowbox img").hover(
-        // function() {
-        // $(this).stop().animate({"opacity": "1"}, "100");
-        // },
-        // function() {
-        // $(this).stop().animate({"opacity": "0.6"}, "100");
-        // });
+            // function() {
+                // $(this).stop().animate({"opacity": "1"}, "100");
+                // },
+                // function() {
+                    // $(this).stop().animate({"opacity": "0.6"}, "100");
+                    // });
 
-        $(".two.columns").click(function()
-        {
-            // var img = $(this).find("a"); 
-            // Shadowbox.open({
-            //     content:    img.attr("href"),
-            //     player:     "img",
-            //     title:      img.attr("title")
-            // });
-            // 
-            // // set up all anchor elements with a "movie" class to work with Shadowbox
-            // Shadowbox.setup("a.movie", {
-            //     gallery:            "My Movies",
-            //     autoplayMovies:     true
-            // });
-        }); 
-
-
-        // $('.two.columns').each(function()
-        // {
-        //     var a = $(this).find('a')
-        //     var img = $(this).find('img')
-        //     $(this).css("background-image", 'url('+ a.attr('href')+')'); 
-        //     $(this).css({ 'background-size': '100% 190%'}); 
-        //     img.css('src', a.attr('href')); 
-        //     img.css('visibility', 'hidden'); 
-        // }); 
-        
-        $('.shadowbox').each(function()
-        {
-             var a = $(this).attr('href')
-             console.log("the a's: ", a); 
-             var img = $(this).find('img')
-             img.attr('src', a); 
-        });
-        
-        // $('.shadowbox img').mouseenter(function()
-        // {
-        //     $(this).parent().addClass('hover'); 
-        // }).mouseleave(function()
-        // {
-        //     $(this).parent().removeClass('hover'); 
-        // }); 
-        // 
-        $('.shadowbox div').mouseenter(function()
-        {
-            $(this).children().addClass('hover'); 
-            $(this).addClass('hover'); 
-        }).mouseleave(function()
-        {
-            $(this).children().removeClass('hover'); 
-            $(this).removeClass('hover'); 
-        });
-
-        // changing a specific elements dimensions for the div
-        // $('a[title="Beast Quad"]').parent().css({'background-size': '130% 100%'});
-        // $('a[title="Dino"]').parent().css({'background-size': '130% 160%'});  
-        // $('a[title="Man Dude"]').parent().css({'background-size': '130% 100%'}); 
-        // $('a[title~="Old"]').parent().css({'background-size': '120% 160%'}); 
+                    $(".two.columns").click(function()
+                    {
+                        // var img = $(this).find("a"); 
+                        // Shadowbox.open({
+                            //     content:    img.attr("href"),
+                            //     player:     "img",
+                            //     title:      img.attr("title")
+                            // });
+                            // 
+                            // // set up all anchor elements with a "movie" class to work with Shadowbox
+                            // Shadowbox.setup("a.movie", {
+                                //     gallery:            "My Movies",
+                                //     autoplayMovies:     true
+                                // });
+                            }); 
 
 
+                            // $('.two.columns').each(function()
+                            // {
+                                //     var a = $(this).find('a')
+                                //     var img = $(this).find('img')
+                                //     $(this).css("background-image", 'url('+ a.attr('href')+')'); 
+                                //     $(this).css({ 'background-size': '100% 190%'}); 
+                                //     img.css('src', a.attr('href')); 
+                                //     img.css('visibility', 'hidden'); 
+                                // }); 
+
+                                $('.shadowbox').each(function()
+                                {
+                                    var src = $(this).attr('href')
+                                    var title = $(this).attr('title')
+                                    // console.log("the a's: ", a); 
+                                    var img = $(this).find('img')
+                                    img.attr('src', src); 
+                                    img.attr('title', title); 
+                                });
 
 
-        $("body").css("display", "none");
+                                $('.shadowbox div').mouseenter(function()
+                                {
+                                    // $(this).children().addClass('hover'); 
+                                    $(this).addClass('hover'); 
+                                    }).mouseleave(function()
+                                    {
+                                        // $(this).children().removeClass('hover'); 
+                                        $(this).removeClass('hover'); 
+                                    });
 
-        $("body").fadeIn(1000);
-
-        $("a.transition").click(function(event){
-            event.preventDefault();
-            linkLocation = this.href;
-            $("body").fadeOut(1000, loadPage); 
-
-        });
-
-        function loadPage() {
-            window.location = linkLocation;
-        }
-    });
+                                    // changing a specific elements dimensions for the div
+                                    $('img[title="Beast Quad"]').css({'width': '140px'});
+                                    $('img[title="Mandude"]').css({'width': '140px'});
+                                    // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
 
 
-    </script>
-</head>
+                                    $("body").css("display", "none");
+
+                                    $("body").fadeIn(1000);
+
+                                    $("a.transition").click(function(event){
+                                        event.preventDefault();
+                                        linkLocation = this.href;
+                                        $("body").fadeOut(1000, loadPage); 
+
+                                    });
+
+                                    function loadPage() {
+                                        window.location = linkLocation;
+                                    }
+                                });
+
+
+                                </script>
+                            </head>
 
 <!-- Flush the Buffer Early -->
 <?php flush(); ?>
@@ -198,24 +190,102 @@
                                 <img src=""/>
                             </div>
                         </a>  
-                        
+
                         <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Demon">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>
                         </a>
-                        <a class="shadowbox hidden" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
+                        <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/alien.png" rel="shadowbox" title="Alien">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/baldy-copy.png" rel="shadowbox" title="Baldy">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/beast_quad.png" rel="shadowbox" title="Beast Quad">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/dino.png" rel="shadowbox" title="Dino">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/ironman_front.png" rel="shadowbox[Ironman]" title="Ironman Front">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>
                         </a>
                         
-                        <a class="shadowbox hidden" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                        <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_alt.png" rel="shadowbox[Ironman]" title="Ironman Side">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>
                         </a>
-                      
+                        
+                        <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_back.png" rel="shadowbox[Ironman]" title="Ironman Back">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/mandude.jpg" rel="shadowbox" title="Mandude">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/old-men.jpeg" rel="shadowbox" title="Old Skinny Man">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/old-men2.jpeg" rel="shadowbox" title="Old Chubby Man">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+
 
 
                     </div>
@@ -224,26 +294,21 @@
 
                     <div class = "section two">
                         <h1> Traditional Sculptures </h1> 
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>    
+                        <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>  
                     </div>
 
 
                     <div class = "section three">
                         <h1> Header </h1>
-                        <div class="two columns">   </div>
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>    
-                        <div class="two columns">   </div>    
+                        <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>  
 
                     </div>
                 </div>

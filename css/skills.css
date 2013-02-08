@@ -107,7 +107,7 @@ a.transition
     -moz-transition:opacity 0.5s ease; 
 }
 
-.left.arrow .hidden, .right.arrow .hidden, .hidden
+.left.arrow .hidden, .right.arrow .hidden
 {
     opacity:0;
     -webkit-transition:opacity 0.5s ease;
@@ -188,7 +188,7 @@ a.transition
     border:7px solid rgba(255,255,255,0.4);
     overflow:hidden;
     margin-top:50px;
-    background-color:grey;
+    background-color:transparent;
     background-position:top; 
 /*    border-radius:10px;*/
 /*    -webkit-box-shadow:
