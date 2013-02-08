@@ -89,13 +89,23 @@
              img.attr('src', a); 
         });
         
-        $('.shadowbox img').mouseenter(function()
+        // $('.shadowbox img').mouseenter(function()
+        // {
+        //     $(this).parent().addClass('hover'); 
+        // }).mouseleave(function()
+        // {
+        //     $(this).parent().removeClass('hover'); 
+        // }); 
+        // 
+        $('.shadowbox div').mouseenter(function()
         {
-            $(this).parent().addClass('hover'); 
+            $(this).children().addClass('hover'); 
+            $(this).addClass('hover'); 
         }).mouseleave(function()
         {
-            $(this).parent().removeClass('hover'); 
-        }); 
+            $(this).children().removeClass('hover'); 
+            $(this).removeClass('hover'); 
+        });
 
         // changing a specific elements dimensions for the div
         // $('a[title="Beast Quad"]').parent().css({'background-size': '130% 100%'});
@@ -183,18 +193,24 @@
                 <div class="container">
                     <div class = "section one">
                         <h1> Digital Sculptures </h1>
-                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox[Demons]" title="Alien">
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>
                         </a>  
                         
-                        <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Alien">
+                        <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Demon">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>
                         </a>
-                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox[Demons]" title="Alien">
+                        <a class="shadowbox hidden" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
+                            <div class="two columns"> 
+                                <img src=""/>
+                            </div>
+                        </a>
+                        
+                        <a class="shadowbox hidden" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
                             <div class="two columns"> 
                                 <img src=""/>
                             </div>

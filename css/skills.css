@@ -147,7 +147,7 @@ a.transition
              transition: all 1s ease;
 }
 
-.shadowbox img:hover
+.shadowbox img.hover
 {
     width: 150px;
 /*    height: 400px;*/
