@@ -44,331 +44,328 @@
         modal: false
     });
 
+    Shadowbox.setup("a.movie", {
+        gallery:            "My Movies",
+        autoplayMovies:     true
+    });
+
     $(document).ready(function() {
 
-        // $(".shadowbox img").hover(
-            // function() {
-                // $(this).stop().animate({"opacity": "1"}, "100");
-                // },
-                // function() {
-                    // $(this).stop().animate({"opacity": "0.6"}, "100");
-                    // });
+        $(".two.columns").click(function()
+        {
+            // var img = $(this).find("a"); 
+            // Shadowbox.open({
+                //     content:    img.attr("href"),
+                //     player:     "img",
+                //     title:      img.attr("title")
+                // });
+                // 
+                // // set up all anchor elements with a "movie" class to work with Shadowbox
+            }); 
 
-                    $(".two.columns").click(function()
-                    {
-                        // var img = $(this).find("a"); 
-                        // Shadowbox.open({
-                            //     content:    img.attr("href"),
-                            //     player:     "img",
-                            //     title:      img.attr("title")
-                            // });
-                            // 
-                            // // set up all anchor elements with a "movie" class to work with Shadowbox
-                            // Shadowbox.setup("a.movie", {
-                                //     gallery:            "My Movies",
-                                //     autoplayMovies:     true
-                                // });
-                            }); 
-
-
-                            // $('.two.columns').each(function()
-                            // {
-                                //     var a = $(this).find('a')
-                                //     var img = $(this).find('img')
-                                //     $(this).css("background-image", 'url('+ a.attr('href')+')'); 
-                                //     $(this).css({ 'background-size': '100% 190%'}); 
-                                //     img.css('src', a.attr('href')); 
-                                //     img.css('visibility', 'hidden'); 
-                                // }); 
-
-                                $('.shadowbox').each(function()
-                                {
-                                    var src = $(this).attr('href')
-                                    var title = $(this).attr('title')
-                                    // console.log("the a's: ", a); 
-                                    var img = $(this).find('img')
-                                    img.attr('src', src); 
-                                    img.attr('title', title); 
-                                });
+            $('.shadowbox').each(function()
+            {
+                var src = $(this).attr('href')
+                var title = $(this).attr('title')
+                var cover = "images/logo.png"
+                // console.log("the a's: ", a); 
+                var img = $(this).find('img')
+                img.attr('src', cover); 
+                img.attr('title', title); 
+                img.attr('data-original', src)
+            });
 
 
-                                $('.shadowbox div').mouseenter(function()
-                                {
-                                    // $(this).children().addClass('hover'); 
-                                    $(this).addClass('hover'); 
-                                    }).mouseleave(function()
-                                    {
-                                        // $(this).children().removeClass('hover'); 
-                                        $(this).removeClass('hover'); 
-                                    });
+            $('.shadowbox div').mouseenter(function()
+            {
+                // $(this).children().addClass('hover'); 
+                $(this).addClass('hover'); 
+                }).mouseleave(function()
+                {
+                    // $(this).children().removeClass('hover'); 
+                    $(this).removeClass('hover'); 
+                });
 
-                                    // changing a specific elements dimensions for the div
-                                    $('img[title="Beast Quad"]').css({'width': '140px'});
-                                    $('img[title="Mandude"]').css({'width': '140px'});
-                                    $('img[title="Sauce"]').css({'width': '200px'})
-                                    // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
-
-
-                                    $("body").css("display", "none");
-
-                                    $("body").fadeIn(1000);
-
-                                    $("a.transition").click(function(event){
-                                        event.preventDefault();
-                                        linkLocation = this.href;
-                                        $("body").fadeOut(1000, loadPage); 
-
-                                    });
-
-                                    function loadPage() {
-                                        window.location = linkLocation;
-                                    }
-                                });
+                // changing a specific elements dimensions for the div
+                $('img[title="Beast Quad"]').css({'width': '140px'});
+                $('img[title="Mandude"]').css({'width': '140px'});
+                $('img[title="Sauce"]').css({'width': '200px'})
+                // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
 
 
-                                </script>
-                            </head>
+                $("body").css("display", "none");
+
+                $("body").fadeIn(1000);
+
+                $("a.transition").click(function(event){
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(1000, loadPage); 
+
+                });
+
+                function loadPage() {
+                    window.location = linkLocation;
+                }
+            });
+
+
+            </script>
+        </head>
 
 <!-- Flush the Buffer Early -->
-<?php flush(); ?>
+    <?php flush(); ?>
 
-<body>
+    <body>
 
-    <div class = "main-page">
-        <!-- <ul>
-        <li><h2><a href="index.html"> Skills  </a></h2></li>
-        <li><h2><a href="index.html"> Experience  </a></h2></li>
-        <li><h2><a href="index.html"> Resume  </a></h2></li>
-        <li><h2><a href="index.html"> Creative  </a></h2></li> 
-        <li><h2><a href="index.html"> Leadership  </a></h2></li>
-        </ul> -->
-
-        <!-- header -->
-        <div class="main-header">
-            <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
-            <div class="navbar">
-                <h2><a href="gallery.html" class="active">Skills</a></h2>  
-                <h2><a href="experience.html">Experience</a></h2>  
-                <h2><a href="index.html">Resume</a></h2>  
-                <h2><a href="index.html">Creativity</a></h2>  
-                <h2><a href="index.html">Leadership</a></h2>  
+        <div class = "main-page">
+            <!-- header -->
+            <div class="main-header">
+                <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
+                <div class="navbar">
+                    <h2><a href="gallery.html" class="active">Skills</a></h2>  
+                    <h2><a href="experience.html">Experience</a></h2>  
+                    <h2><a href="index.html">Resume</a></h2>  
+                    <h2><a href="index.html">Creativity</a></h2>  
+                    <h2><a href="index.html">Leadership</a></h2>  
+                </div>
             </div>
-        </div>
-        <!-- end of header -->
+            <!-- end of header -->
 
 
 
-        <!-- content -->
-        <div class="content">
+            <!-- content -->
+            <div class="content">
 
-            <!-- digital sculptures page -->
-            <div id = "digital-sculptures" class="">
+                <!-- digital sculptures page -->
+                <div id = "digital-sculptures" class="">
 
-                <div class = "section-header">
+                    <div class = "section-header">
 
-                    <div class="left arrow">
-                        <a class="hidden lft label">Clothing</a>
-                        <a class="transition" href="h.html"><i class="foundicon-left-arrow icons"></i></a>
+                        <div class="left arrow">
+                            <a class="hidden lft label">Clothing</a>
+                            <a class="transition" href="h.html"><i class="foundicon-left-arrow icons"></i></a>
+                        </div>
+
+                        <h2 >
+                            <a class = "page-title"> 2D Sculptures</a>
+                        </h2> 
+
+                        <div class="right arrow">
+                            <a class="transition" href="h.html"><i class="foundicon-right-arrow icons"></i></a> 
+                            <a class="hidden rght label">3D Sculptures</a>
+                        </div>
+
                     </div>
 
-                    <h2 >
-                        <a class = "page-title"> 2D Sculptures</a>
-                    </h2> 
 
-                    <div class="right arrow">
-                        <a class="transition" href="h.html"><i class="foundicon-right-arrow icons"></i></a> 
-                        <a class="hidden rght label">3D Sculptures</a>
+                    <div class="container">
+                        <div class = "section one">
+                            <h1> Digital Sculptures </h1>
+                            <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>  
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Demon">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide"  data-original="" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/alien.png" rel="shadowbox" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/baldy-copy.png" rel="shadowbox" title="Baldy">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/beast_quad.png" rel="shadowbox" title="Beast Quad">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/dino.png" rel="shadowbox" title="Dino">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/ironman_front.png" rel="shadowbox[Ironman]" title="Ironman Front">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_alt.png" rel="shadowbox[Ironman]" title="Ironman Side">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_back.png" rel="shadowbox[Ironman]" title="Ironman Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/mandude.jpg" rel="shadowbox" title="Mandude">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/old-men.jpeg" rel="shadowbox" title="Old Skinny Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/old-men2.jpeg" rel="shadowbox" title="Old Chubby Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/mstrong.png" rel="shadowbox" title="Mark Strong">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/sauce187.png" rel="shadowbox" title="Sauce">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/tommy_slim.png" rel="shadowbox" title="Tommy Slim">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/jacked-man.JPG" rel="shadowbox" title="Jacked Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/waterpigIMG.JPG" rel="shadowbox[WaterPig]" title="Water Pig">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/waterPigPaint.png" rel="shadowbox[WaterPig]" title="Water Pig Pieces">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <script type="text/javascript" src="js/lazyLoad.min.js"></script> 
+                            <script> 
+                            $(function() {
+                                $("img").lazyload({
+                                    effect : "fadeIn",
+                                    // event: 'lateLoad'
+
+                                    /*   appear : function(elements_left, settings) {
+                                    console.log("appear");
+                                    console.log(elements_left);
+                                    //console.log(this, elements_left, settings);
+                                    },
+                                    load : function(elements_left, settings) {
+                                    console.log("load");
+                                    console.log(elements_left);
+                                    //console.log(this, elements_left, settings);
+                                    }
+                                    */
+                                });
+                            });
+                            </script>
+                        </div>
+                        <!-- end of digital sculptures -->
+
+
+                        <div class = "section two">
+                            <h1> Traditional Sculptures </h1> 
+                            <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>  
+                        </div>
+
+
+                        <div class = "section three">
+                            <h1> Header </h1>
+                            <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>  
+
+                        </div>
                     </div>
 
                 </div>
 
-
-                <div class="container">
-                    <div class = "section one">
-                        <h1> Digital Sculptures </h1>
-                        <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>  
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Demon">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-                        <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/alien.png" rel="shadowbox" title="Alien">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/baldy-copy.png" rel="shadowbox" title="Baldy">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/beast_quad.png" rel="shadowbox" title="Beast Quad">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/dino.png" rel="shadowbox" title="Dino">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/ironman_front.png" rel="shadowbox[Ironman]" title="Ironman Front">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-                        
-                        <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_alt.png" rel="shadowbox[Ironman]" title="Ironman Side">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-                        
-                        <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_back.png" rel="shadowbox[Ironman]" title="Ironman Back">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/mandude.jpg" rel="shadowbox" title="Mandude">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/old-men.jpeg" rel="shadowbox" title="Old Skinny Man">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/old-men2.jpeg" rel="shadowbox" title="Old Chubby Man">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/mstrong.png" rel="shadowbox" title="Mark Strong">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/sauce187.png" rel="shadowbox" title="Sauce">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/tommy_slim.png" rel="shadowbox" title="Tommy Slim">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-
-                        <a class="shadowbox" href="images/3d/digital-sculptures/jacked-man.JPG" rel="shadowbox" title="Jacked Man">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-                        
-                        <a class="shadowbox" href="images/3d/digital-sculptures/waterpigIMG.JPG" rel="shadowbox[WaterPig]" title="Water Pig">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
-                        
-                        <a class="shadowbox hide" href="images/3d/digital-sculptures/waterPigPaint.png" rel="shadowbox[WaterPig]" title="Water Pig Pieces">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>
+            </div>
+            <!-- end of content -->
 
 
-                    </div>
-                    <!-- end of digital sculptures -->
 
 
-                    <div class = "section two">
-                        <h1> Traditional Sculptures </h1> 
-                        <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>  
-                    </div>
-
-
-                    <div class = "section three">
-                        <h1> Header </h1>
-                        <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
-                            <div class="two columns"> 
-                                <img src=""/>
-                            </div>
-                        </a>  
-
-                    </div>
+            <!-- footer -->
+            <div class="footer">
+                <div class="contact">
+                    <a href="mailto:nhurt@cmu.edu" target="_blank">
+                        <img src="img/Footer/GM.png" width="25" height="25">
+                    </a>
+                    <a href="http://vimeo.com/nicolashurt" target="_blank">
+                        <img src="img/Footer/VIM.png" width="25" height="25">
+                    </a>
+                    <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
+                        <img src="img/Footer/LI.png" width="25" height="25">
+                    </a>
+                    <a href="https://www.facebook.com/nicolas.hurt.1" target="_blank">
+                        <img src="img/Footer/fb.png" width="40" height="40">
+                    </a>
                 </div>
-
+                <p>© Jimmy Krahe 2013</p>
+                <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
             </div>
+            <!-- end of footer -->
 
         </div>
-        <!-- end of content -->
+        <!-- end of container unit -->
 
 
 
-
-        <!-- footer -->
-        <div class="footer">
-            <div class="contact">
-                <a href="mailto:nhurt@cmu.edu" target="_blank">
-                    <img src="img/Footer/GM.png" width="25" height="25">
-                </a>
-                <a href="http://vimeo.com/nicolashurt" target="_blank">
-                    <img src="img/Footer/VIM.png" width="25" height="25">
-                </a>
-                <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
-                    <img src="img/Footer/LI.png" width="25" height="25">
-                </a>
-                <a href="https://www.facebook.com/nicolas.hurt.1" target="_blank">
-                    <img src="img/Footer/fb.png" width="40" height="40">
-                </a>
-            </div>
-            <p>© Jimmy Krahe 2013</p>
-            <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
-        </div>
-        <!-- end of footer -->
-
-    </div>
-    <!-- end of container unit -->
-
-
-
-    <!-- might not be necessary right now -->
-    <!-- <div class = "footer">
-    <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
-    </div> -->
+        <!-- might not be necessary right now -->
+        <!-- <div class = "footer">
+        <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+        </div> -->
 
 <!-- end of content / hero unit-->
 
@@ -405,3 +402,12 @@ $(document).ready(function()
 
 
 </html>
+
+
+<!-- // $(".shadowbox img").hover(
+    // function() {
+        // $(this).stop().animate({"opacity": "1"}, "100");
+        // },
+        // function() {
+            // $(this).stop().animate({"opacity": "0.6"}, "100");
+            // }); -->
