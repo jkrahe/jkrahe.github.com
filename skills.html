@@ -87,9 +87,11 @@
                 });
 
                 // changing a specific elements dimensions for the div
-                $('img[title="Beast Quad"]').css({'width': '140px'});
+                $('img[title="Beast Quad"]').css({'width': '140px', 'left': '-30px'});
                 $('img[title="Mandude"]').css({'width': '140px'});
-                $('img[title="Sauce"]').css({'width': '200px'})
+                $('img[title="Sauce"]').css({'width': '180px', 'left': '-50px'})
+                $('img[title="Tommy Slim"]').css({'top': '-50px'})
+                $('img[title="Old Skinny Man"]').css({'top': '-10px', 'left':'-5px'})
                 // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
 
 
@@ -282,50 +284,106 @@
                                 </div>
                             </a>
 
-                            <script type="text/javascript" src="js/lazyLoad.min.js"></script> 
-                            <script> 
-                            $(function() {
-                                $("img").lazyload({
-                                    effect : "fadeIn",
-                                    // event: 'lateLoad'
-
-                                    /*   appear : function(elements_left, settings) {
-                                    console.log("appear");
-                                    console.log(elements_left);
-                                    //console.log(this, elements_left, settings);
-                                    },
-                                    load : function(elements_left, settings) {
-                                    console.log("load");
-                                    console.log(elements_left);
-                                    //console.log(this, elements_left, settings);
-                                    }
-                                    */
-                                });
-                            });
-                            </script>
+                            
                         </div>
                         <!-- end of digital sculptures -->
 
 
                         <div class = "section two">
                             <h1> Traditional Sculptures </h1> 
-                            <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Acneman/acneman1.jpg" rel="shadowbox[Acneman]" title="Acneman">
                                 <div class="two columns"> 
                                     <img src=""/>
                                 </div>
                             </a>  
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Acneman/acneman2.jpg" rel="shadowbox[Acneman]" title="Acneman">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Alien/alien.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien2.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien3.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien4.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <!-- end of traditional sculptures -->
                         </div>
 
 
                         <div class = "section three">
                             <h1> Header </h1>
-                            <a class="shadowbox" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
-                                <div class="two columns"> 
-                                    <img src=""/>
-                                </div>
-                            </a>  
+                            <!-- <a class="shadowbox" href="images/3d/traditional-sculptures/Acneman/acneman2.jpg" rel="shadowbox[Demons]" title="Demon Back">
+                                                         <div class="two columns"> 
+                                                             <img src=""/>
+                                                         </div>
+                                                     </a>   -->
 
                         </div>
+                        
+                        <script type="text/javascript" src="js/lazyLoad.min.js"></script> 
+                        <script> 
+                        $(function() {
+                            $(".section.one img").lazyload({
+                                effect : "fadeIn",
+                                // event: 'lateLoad'
+
+                                /*   appear : function(elements_left, settings) {
+                                console.log("appear");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                },
+                                load : function(elements_left, settings) {
+                                console.log("load");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                }
+                                */
+                            });
+                        });
+                        
+                        $(function() {
+                            $(".section.two img").lazyload({
+                                effect : "fadeIn",
+                                // event: 'lateLoad'
+
+                                /*   appear : function(elements_left, settings) {
+                                console.log("appear");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                },
+                                load : function(elements_left, settings) {
+                                console.log("load");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                }
+                                */
+                            });
+                        });
+                        
+                        
+                        </script>
                     </div>
 
                 </div>

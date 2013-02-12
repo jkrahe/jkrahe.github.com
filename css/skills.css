@@ -138,7 +138,10 @@ a.transition
 /*    width:inherit;
     height: 300px;*/
     position:relative;
-     width: inherit;
+
+    display: block !important;
+    margin:auto;
+    width: inherit;
 
      -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
@@ -150,7 +153,6 @@ a.transition
 .shadowbox img.hover
 {
     width: 150px;
-/*    height: 400px;*/
 -webkit-transition: all 1s ease;
    -moz-transition: all 1s ease;
      -o-transition: all 1s ease;
@@ -160,6 +162,7 @@ a.transition
 
 .container .section .two.columns
 {
+        text-align:center;
     -webkit-transition: all 1s ease;
        -moz-transition: all 1s ease;
          -o-transition: all 1s ease;
