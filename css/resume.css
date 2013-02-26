@@ -13,27 +13,24 @@ div.resume
     left:50%;
     text-align: center;
     color:white;
-/*    border:1px solid red;*/
+    /*    border:1px solid red;*/
 }
 
 div.experience-block
 {
     background-color:rgba(255,255,255,0.4);
     padding:30px 30px 30px 50px;
-    margin-bottom:10px;
+    margin-bottom:2px;
     font-size:18px;
 }
 
-div.experience-block p
-{
-}
 
 div.experience-block h3.year
 {
     color:#313131;
     font-size:16px;
     position:absolute;
-    left:100px;
+    left:80px;
 }
 
 div.experience-block h1.company
@@ -52,8 +49,7 @@ div.experience-block h1.company, p.title, p.description
 
 div.experience-block p.title
 {
-    font-size:12px;
-    text-transform:uppercase;
+    font-size:14px;
     color:#313131;
 }
 
@@ -64,3 +60,13 @@ div.experience-block p.description
     color:rgba(255,255,255,0.7);
 }
 
+div.experience-block p.description a 
+{
+    color:rgba(123, 178, 0, 1);
+}
+
+div.experience-block p.description a:hover
+{
+    color:rgba(123, 178, 0, 1);
+    text-decoration:underline !important; 
+}
