@@ -46,7 +46,7 @@ body
     background-image: url('../img/new-bg.jpg');
     /*makes bg resize with window*/
     /*        background-size: 100%;*/
-    font-family: 'Oranienbaum';
+    font-family:'Economica', sans-serif;
     /*    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
     background-repeat: no-repeat;
     background-position:top center;

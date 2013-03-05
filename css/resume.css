@@ -3,18 +3,6 @@ div.content
 /*    background-color:white;*/
 }
 
-div.resume 
-{
-    position:relative;
-    margin:inherit;
-    margin:20px;
-    height:1200px;
-    width:1000px;
-    left:50%;
-    text-align: center;
-    color:white;
-    /*    border:1px solid red;*/
-}
 
 div.experience-block
 {
@@ -69,4 +57,16 @@ div.experience-block p.description a:hover
 {
     color:rgba(123, 178, 0, 1);
     text-decoration:underline !important; 
+}
+
+div.resume 
+{
+    position:relative;
+    background-image:url("../images/jimmyKraheResume.png");
+    background-size: 100% auto;
+    text-align:center;
+    width:1000px;
+    height:1300px;
+    left:50%;
+    background-repeat:no-repeat;
 }
