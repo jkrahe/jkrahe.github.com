@@ -4,8 +4,6 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
 { 
     // cool trick for getting integers even if the value is auto
     var z = ~~$(this).css('zIndex')
-    console.log(z)
-
     $(this).animate({
         transform: 'translateX(200px) translateY(100px) scale(1.5)', 
     }, function(){
@@ -13,20 +11,19 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     });
 }); 
 }).mouseleave(function()
-{
+{ 
     $(this).animate({
+        z:0,
         transform: 'translateX(0px) translateY(0px) scale(1)'
-    },     function(){
-        $(this).css({'z-index' : '0'
-        }););
     });
+    $(this).css({'z-index' : '1'}); 
+});
 
     // top right div
     var div1 = $('#experience .eight.columns.second').mouseenter(function()
     { 
         // cool trick for getting integers even if the value is auto
         var z = ~~$(this).css('zIndex')
-        console.log(z)
 
         $(this).animate({
             transform: 'translateX(-200px) translateY(100px) scale(1.5)', 
@@ -40,6 +37,7 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
             z:0,
             transform: 'translateX(0px) translateY(0px) scale(1)'
         });
+        $(this).css({'z-index' : '1'}); 
     });
 
 
@@ -48,7 +46,6 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     { 
         // cool trick for getting integers even if the value is auto
         var z = ~~$(this).css('zIndex')
-        console.log(z)
 
         $(this).animate({
             transform: 'translateX(200px) translateY(-100px) scale(1.5)', 
@@ -62,6 +59,7 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
             z:0,
             transform: 'translateX(0px) translateY(0px) scale(1)'
         });
+        $(this).css({'z-index' : '1'}); 
     });
 
 
@@ -70,7 +68,6 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     { 
         // cool trick for getting integers even if the value is auto
         var z = ~~$(this).css('zIndex')
-        console.log(z)
 
         $(this).animate({
             transform: 'translateX(-200px) translateY(-100px) scale(1.5)', 
@@ -84,4 +81,5 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
             z:0,
             transform: 'translateX(0px) translateY(0px) scale(1)'
         });
+        $(this).css({'z-index' : '1'}); 
     });

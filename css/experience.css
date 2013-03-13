@@ -41,7 +41,7 @@
 .eight.columns .image
 {
     box-sizing:content-box !important;
-    position:absolute;
+    position:relative;
     width:150px;
     height:150px;
     top:0;
@@ -51,4 +51,9 @@
     background-size:400px 164px;
     border:10px solid white;
     border-radius:10px;
+}
+
+.text h1
+{
+    font-size:25px;
 }
