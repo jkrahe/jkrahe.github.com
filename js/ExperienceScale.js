@@ -3,20 +3,20 @@
 var div1 = $('#experience .eight.columns.first').mouseenter(function()
 { 
     // cool trick for getting integers even if the value is auto
-    var z = ~~$(this).css('zIndex')
+    // var z = ~~$(this).css('zIndex')
+    $(this).css({'z-index' : '5'}); 
     $(this).animate({
         transform: 'translateX(200px) translateY(100px) scale(1.5)', 
-    }, function(){
-        $(this).css({'z-index' : '5'
-    });
 }); 
 }).mouseleave(function()
 { 
     $(this).animate({
         z:0,
         transform: 'translateX(0px) translateY(0px) scale(1)'
+    }, function(){
+        $(this).css({'z-index' : '1'}); 
     });
-    $(this).css({'z-index' : '1'}); 
+    
 });
 
     // top right div
