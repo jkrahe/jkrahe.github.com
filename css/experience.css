@@ -9,6 +9,7 @@
     margin-bottom:50px;
     border-radius:10px;
     opacity:0.6;
+    text-align:left;
     transition: opacity 0.4s; 
     -webkit-transition: opacity 0.4s; 
     -moz-transition: opacity 0.4s;
@@ -41,8 +42,8 @@
 {
     box-sizing:content-box !important;
     position:relative;
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
     top:0;
     right:0;
     background-color:blue;
@@ -52,7 +53,15 @@
     border-radius:10px;
 }
 
+.text p
+{
+    padding:5px;
+    padding-left:20px;
+}
+
+
 .text h1
 {
     font-size:25px;
+    padding:20px;
 }
