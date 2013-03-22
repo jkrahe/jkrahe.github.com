@@ -70,6 +70,8 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
         $(this).animate({
             transform: 'translateX(-200px) translateY(-100px) scale(1.5)', 
         });
+        $("html, body").animate({ scrollTop: $(this).offset().top-$(this).height() }, 500);
+
     }).mouseleave(function()
     {
         $(this).animate({
