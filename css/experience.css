@@ -3,11 +3,10 @@
 #experience .eight.columns
 {
     box-sizing:border-box;
-    height:250px;
-    background-color:rgb(120,120,120);
+    height:280px;
+    background-color:rgba(123,178,0, 0.2);
     position:relative;
     margin-bottom:50px;
-    border-radius:10px;
     opacity:0.6;
     text-align:left;
     transition: opacity 0.4s; 
@@ -38,30 +37,38 @@
     top:-150px !important;*/
 }
 
-.eight.columns .image
+#experience
+{
+/*    background-color:rgba(100,100,100,0.4);*/
+    margin-bottom:40px;
+}
+
+#experience .eight.columns .image
 {
     box-sizing:content-box !important;
-    position:relative;
+    position:absolute;
     width:100px;
     height:100px;
-    top:0;
-    right:0;
+    bottom:0;
+    left:0;
+    margin-left:20px;
+    margin-bottom:20px;
     background-color:blue;
     background-image:url("../images/template.jpg");
     background-size:400px 164px;
-    border:10px solid white;
-    border-radius:10px;
+    border:7px solid white;
 }
 
-.text p
+#experience .text p
 {
     padding:5px;
     padding-left:20px;
 }
 
 
-.text h1
+#experience .text h1
 {
     font-size:25px;
-    padding:20px;
+    padding:10px 20px 5px 20px;
+    color:white;
 }

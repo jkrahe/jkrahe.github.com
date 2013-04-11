@@ -66,9 +66,11 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     { 
         // cool trick for getting integers even if the value is auto
         // var z = ~~$(this).css('zIndex')
-        $(this).css({'z-index' : '5'}); 
+        $(this).css({'z-index' : '5'});
+        // $(this).css({'background-color' : "rgba(123,178,0, 0.7)"}) 
         $(this).animate({
             transform: 'translateX(-200px) translateY(-100px) scale(1.5)', 
+            backgroundColor : 'rgba(73, 102,0,1)'
         });
         $("html, body").animate({ scrollTop: $(this).offset().top-$(this).height() }, 500);
 
@@ -76,9 +78,13 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     {
         $(this).animate({
             z:0,
-            transform: 'translateX(0px) translateY(0px) scale(1)'
+            transform: 'translateX(0px) translateY(0px) scale(1)',
+            backgroundColor : 'rgba(123, 178,0,0.2)'
+            // $(this).css({'background-color' : "rgba(123,178,0, 0.2)"}) 
         }, function(){
+            
             $(this).css({'z-index' : '1'}); 
+            
         });
 
     });
