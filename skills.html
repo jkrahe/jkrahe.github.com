@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="Shortcut Icon" href="favicon.ico?289349832"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Jimmy Krahe</title>
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="Aderinsola Akintilo">
+    <!-- Date: 2012-06-24 -->
+
+
+
+
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <link rel="stylesheet" type="text/css" href="css/general_enclosed_foundicons.css">
+    <link rel="stylesheet" href="css/skills.css">
+
+
+    <!-- jQuery Calls -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+
+
+    <script type="text/javascript" src="js/shadowbox.js"></script>
+    <!-- js functions -->
+    <script type="text/javascript">
+    Shadowbox.init({
+        handleOversize: "drag",
+        displayNav: true,
+        modal: false
+    });
+
+    Shadowbox.setup("a.movie", {
+        gallery:            "My Movies",
+        autoplayMovies:     true
+    });
+
+    $(document).ready(function() {
+
+        $(".two.columns").click(function()
+        {
+            // var img = $(this).find("a"); 
+            // Shadowbox.open({
+                //     content:    img.attr("href"),
+                //     player:     "img",
+                //     title:      img.attr("title")
+                // });
+                // 
+                // // set up all anchor elements with a "movie" class to work with Shadowbox
+            }); 
+
+            $('.shadowbox').each(function()
+            {
+                var src = $(this).attr('href')
+                var title = $(this).attr('title')
+                var cover = "images/logo.png"
+                // console.log("the a's: ", a); 
+                var img = $(this).find('img')
+                img.attr('src', cover); 
+                img.attr('title', title); 
+                img.attr('data-original', src)
+            });
+
+
+            $('.shadowbox div').mouseenter(function()
+            {
+                // $(this).children().addClass('hover'); 
+                $(this).addClass('hover'); 
+                }).mouseleave(function()
+                {
+                    // $(this).children().removeClass('hover'); 
+                    $(this).removeClass('hover'); 
+                });
+
+                // changing a specific elements dimensions for the div
+                $('img[title="Beast Quad"]').css({'width': '140px', 'left': '-30px'});
+                $('img[title="Mandude"]').css({'width': '140px'});
+                $('img[title="Sauce"]').css({'width': '180px', 'left': '-50px'})
+                $('img[title="Tommy Slim"]').css({'top': '-50px'})
+                $('img[title="Old Skinny Man"]').css({'top': '-10px', 'left':'-5px'})
+                $('img[title="Animal Head"]').css({'width' : '140px'})
+                $('img[title="Characters"]').css({'width' : '200px'})
+                // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
+
+
+                $(".content").css("display", "none");
+
+                $(".content").fadeIn(1500);
+
+                $("a.transition").click(function(event){
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $(".content").fadeOut(1500, loadPage); 
+
+                });
+
+                function loadPage() {
+                    window.location = linkLocation;
+                }
+            });
+
+
+            </script>
+        </head>
+
+<!-- Flush the Buffer Early -->
+    <?php flush(); ?>
+
+    <body>
+
+        <div class = "main-page">
+            <!-- header -->
+            <div class="main-header">
+                <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
+                <div class="navbar">
+                    <h2><a href="skills.html" class="active">Skills</a></h2>  
+                    <h2><a href="experience.html">Experience</a></h2>  
+                    <h2><a href="resume.html">Resume</a></h2>  
+                    <h2><a href="creativity.html">Creativity</a></h2>  
+                    <h2><a href="leadership.html">Leadership</a></h2>  
+                </div>
+            </div>
+            <!-- end of header -->
+
+
+
+            <!-- content -->
+            <div class="content">
+
+                <!-- digital sculptures page -->
+                <div id = "digital-sculptures" class="">
+
+                    <div class = "section-header">
+
+                        <div class="left arrow">
+                            <a class="hidden lft label">2D</a>
+                            <!-- in this page, the sections will be
+                            Doodles
+                            Drawings 
+                            Photoshop -->
+                            <a class="transition" href="skills-2d.html"><i class="foundicon-left-arrow icons"></i></a>
+                        </div>
+
+                        <h2 >
+                            <a class = "page-title">3D</a>
+                        </h2> 
+
+                        <div class="right arrow">
+                            <a class="transition" href="misc.html"><i class="foundicon-right-arrow icons"></i></a> 
+                            <a class="hidden rght label"> Misc</a>
+                            <!-- in this page, the sections will be
+                            clothing
+                            fx makeup -->
+                            
+                            <!-- after Misc page there will be a RIGHT arrow to VIDEO. in video page there will be
+                            nothing but videos
+                            jimmy is gonna get a vimeo account and we will use embedded videos -->
+                        </div>
+
+                    </div>
+
+
+                    <div class="container">
+                        <div class = "split section one">
+                            <h1> Digital </h1>
+                            <a class="shadowbox" href="images/3d/digital-sculptures/demon&kid.jpg" rel="shadowbox" title="Demon & Kid">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>  
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/demonWIP.JPG" rel="shadowbox[Demons]" title="Demon">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide"  data-original="" href="images/3d/digital-sculptures/DemonWIPClose.png" rel="shadowbox[Demons]" title="Demon Close Up">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/DemonWIPBack.png" rel="shadowbox[Demons]" title="Demon Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/alien.png" rel="shadowbox" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/baldy-copy.png" rel="shadowbox" title="Baldy">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/beast_quad.png" rel="shadowbox" title="Beast Quad">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/dino.png" rel="shadowbox" title="Dino">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/ironman_front.png" rel="shadowbox[Ironman]" title="Ironman Front">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_alt.png" rel="shadowbox[Ironman]" title="Ironman Side">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/ironman_back.png" rel="shadowbox[Ironman]" title="Ironman Back">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/mandude.jpg" rel="shadowbox" title="Mandude">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/old-men.jpeg" rel="shadowbox" title="Old Skinny Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/old-men2.jpeg" rel="shadowbox" title="Old Chubby Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/mstrong.png" rel="shadowbox" title="Mark Strong">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/sauce187.png" rel="shadowbox" title="Sauce">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/tommy_slim.png" rel="shadowbox" title="Tommy Slim">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/jacked-man.JPG" rel="shadowbox" title="Jacked Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox" href="images/3d/digital-sculptures/waterpigIMG.JPG" rel="shadowbox[WaterPig]" title="Water Pig">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            <a class="shadowbox hide" href="images/3d/digital-sculptures/waterPigPaint.png" rel="shadowbox[WaterPig]" title="Water Pig Pieces">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+
+                            
+                        </div>
+                        <!-- end of digital sculptures -->
+
+
+                        <div class = "split section two">
+                            <h1> Traditional </h1> 
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Acneman/acneman1.jpg" rel="shadowbox[Acneman]" title="Acneman">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>  
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Acneman/acneman2.jpg" rel="shadowbox[Acneman]" title="Acneman">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Alien/alien.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien2.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien3.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Alien/alien4.jpg" rel="shadowbox[Alien]" title="Alien">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/animal-head.JPG" rel="shadowbox" title="Animal Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Boy_portrait/boy1.jpg" rel="shadowbox[boy]" title="Boy">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Boy_portrait/boy2.jpg" rel="shadowbox[boy]" title="Boy">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/Characters/ch1.jpg" rel="shadowbox[Characters]" title="Characters">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Characters/ch2.jpg" rel="shadowbox[Characters]" title="Characters">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/Characters/ch3.jpg" rel="shadowbox[Characters]" title="Characters">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/clay1.jpg" rel="shadowbox[Clay]" title="Clay Men">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/clay2.jpg" rel="shadowbox[Clay]" title="Clay Men">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/clay3.jpg" rel="shadowbox[Clay]" title="Clay Men">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/clay4.jpg" rel="shadowbox[Clay]" title="Clay Men">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/severed_head/sh-1.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head/sh-2.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head/sh-3.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head/sh-4.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head/sh-5.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head/sh-6.jpg" rel="shadowbox[Severed Head 1]" title="First Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/severed_head2/sh2-1.jpg" rel="shadowbox[Severed Head 2]" title="Second Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head2/sh2-2.jpg" rel="shadowbox[Severed Head 2]" title="Second Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head2/sh2-3.jpg" rel="shadowbox[Severed Head 2]" title="Second Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head2/sh2-4.jpg" rel="shadowbox[Severed Head 2]" title="Second Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/severed_head2/sh2-5.jpg" rel="shadowbox[Severed Head 2]" title="Second Severed Head">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                          
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/1a.jpg" rel="shadowbox[D1a]" title="Doodle 1a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/2a.jpg" rel="shadowbox[D2a]" title="Doodle 2a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/3a.jpg" rel="shadowbox[D3a]" title="Doodle 3a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/doodles/3b.jpg" rel="shadowbox[D3a]" title="Doodle 3b">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/4a.jpg" rel="shadowbox[D4a]" title="Doodle 4a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/5a.jpg" rel="shadowbox[D5a]" title="Doodle 5a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/doodles/5b.jpg" rel="shadowbox[D5a]" title="Doodle 5b">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/doodles/5c.jpg" rel="shadowbox[D5a]" title="Doodle 5c">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/6a.jpg" rel="shadowbox[D6a]" title="Doodle 6a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/doodles/6b.jpg" rel="shadowbox[D6a]" title="Doodle 6b">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/doodles/6c.jpg" rel="shadowbox[D6a]" title="Doodle 6c">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/doodles/7a.jpg" rel="shadowbox[D7a]" title="Doodle 7a">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/strongMan.jpg" rel="shadowbox[StrongMan]" title="Strong Man">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <a class="shadowbox" href="images/3d/traditional-sculptures/worm/w1.JPG" rel="shadowbox[worm]" title="Worm 1">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/worm/w2.JPG" rel="shadowbox[worm]" title="Worm 2">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            <a class="shadowbox hide" href="images/3d/traditional-sculptures/worm/w3.JPG" rel="shadowbox[worm]" title="Worm 3">
+                                <div class="two columns"> 
+                                    <img src=""/>
+                                </div>
+                            </a>
+                            
+                            
+                        </div>
+
+                        <!-- end of traditional sculptures -->
+                        
+                        
+    
+                        <script type="text/javascript" src="js/lazyLoad.min.js"></script> 
+                        <script> 
+                        $(function() {
+                            $(".section.one img").lazyload({
+                                effect : "fadeIn",
+                                // event: 'lateLoad'
+
+                                /*   appear : function(elements_left, settings) {
+                                console.log("appear");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                },
+                                load : function(elements_left, settings) {
+                                console.log("load");
+                                console.log(elements_left);
+                                //console.log(this, elements_left, settings);
+                                }
+                                */
+                            });
+                        });
+                        
+                        $(function() {
+                            $(".section.two img").lazyload({
+                                effect : "fadeIn"
+                            });
+                        });
+                        
+                        
+                        </script>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- end of content -->
+
+
+
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="contact">
+                    <a href="mailto:nhurt@cmu.edu" target="_blank">
+                        <img src="img/Footer/GM.png" width="25" height="25">
+                    </a>
+                    <a href="http://vimeo.com/nicolashurt" target="_blank">
+                        <img src="img/Footer/VIM.png" width="25" height="25">
+                    </a>
+                    <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
+                        <img src="img/Footer/LI.png" width="25" height="25">
+                    </a>
+                    <a href="https://www.facebook.com/jkrahe?fref=ts" target="_blank">
+                        <img src="img/Footer/fb.png" width="40" height="40">
+                    </a>
+                </div>
+                <p>© Jimmy Krahe 2013</p>
+                <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
+            </div>
+            <!-- end of footer -->
+
+        </div>
+        <!-- end of container unit -->
+
+
+
+        <!-- might not be necessary right now -->
+        <!-- <div class = "footer">
+        <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+        </div> -->
+
+<!-- end of content / hero unit-->
+
+
+<!-- end of container -->
+</div>
+
+
+
+</body>
+
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="js/modernizr-1.7.min.js"></script>
+<script src="js/PageSlider.js"></script>
+<script src="js/Centering.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+    // initialize website
+
+    // page sliding
+    initializeSlider(); 
+
+}); 
+
+
+</script>
+
+
+</html>
+
+
+<!-- // $(".shadowbox img").hover(
+    // function() {
+        // $(this).stop().animate({"opacity": "1"}, "100");
+        // },
+        // function() {
+            // $(this).stop().animate({"opacity": "0.6"}, "100");
+            // }); -->

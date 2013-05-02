@@ -1,0 +1,128 @@
+
+div.main-page
+{
+    position:absolute;
+/*    background-color:rgba(240,180,120,0.1);*/
+    /*centering tweaks done with jquery see index.html*/
+    left:50%;
+    width:1000px;
+
+    top:50%;
+    height:600px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+
+.main-page h4, .main-page h1
+{
+/*    background-color:rgba(120,240,120,0.5);*/
+width:150px;
+height:100px;
+margin:10px;
+text-align:center;
+}
+
+.main-page h1 a
+{
+    font-size:700%;
+    color:rgba(123, 178, 0, 1);	
+    text-shadow: 2px 20px 10px rgba(0, 0, 0,.6)
+}
+
+.main-page h4 a
+{
+    font-size:300%;
+}
+
+.main-page h1
+{
+    width:500px;
+    height:100px;
+}
+
+.main-page a
+{
+    position:relative;
+/*    left:0;
+    right:0;*/
+    text-decoration:none;
+}
+
+.main-page .nav.cre, .main-page .nav.lea
+{
+    float:left;
+    margin-left:40px;
+}
+
+.main-page .nav.lea, .main-page .nav.exp
+{
+    clear:both;
+    bottom:5%;
+}
+
+.main-page .nav.exp, .main-page .nav.ski
+{
+    right:0;
+}
+
+.main-page .nav.cre, .main-page .nav.lea
+{
+    left:0;
+}
+.main-page .nav.ski, .main-page .nav.exp
+{
+    float:right;
+    margin-right:40px;
+}
+
+.main-page h1
+{
+    left:50%;
+    top:50%;
+}
+
+.main-page .nav.res
+{
+    left:50%;
+    top:5%;
+}
+
+.main-page .nav.cre, .main-page .nav.ski
+{
+    top:20%;
+}
+
+.main-page h1, .main-page h4
+{
+    position:inherit;
+}
+
+
+
+/* Navigation Blur */
+
+.nav a,
+.nav a:visited {
+    color: rgba(255,255,255,0.01);
+    text-shadow: 0 1px 8px rgba(255,255,255,.7), 0 0 2px rgba(51,51,51,0.2);
+    transition: color linear 0.2s, text-shadow linear 0.2s; 
+    -webkit-transition: color linear 0.4s, text-shadow linear 0.4s; 
+}
+
+/* text-shadow fades to very transparent, font color to nearly opaque
+no extreme values used to improve smoothness of effect */
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus,
+.nav a.activeLink 
+{
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,.05) 
+}
+
+
+
