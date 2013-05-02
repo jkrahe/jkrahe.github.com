@@ -134,7 +134,7 @@ a.transition
 .container .split.section
 {
     width:50% !important;
-    max-width:400px;
+    max-width:420px;
 }
 
 .container .split.section:nth-child(2)

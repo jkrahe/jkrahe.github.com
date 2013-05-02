@@ -97,14 +97,14 @@
                 // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
 
 
-                $("body").css("display", "none");
+                $(".content").css("display", "none");
 
-                $("body").fadeIn(1000);
+                $(".content").fadeIn(1500);
 
                 $("a.transition").click(function(event){
                     event.preventDefault();
                     linkLocation = this.href;
-                    $("body").fadeOut(1000, loadPage); 
+                    $(".content").fadeOut(1500, loadPage); 
 
                 });
 
