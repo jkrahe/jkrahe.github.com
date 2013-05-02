@@ -51,23 +51,6 @@
 
     $(document).ready(function() {
 
-        $(".content").css("display", "none");
-
-        $(".content").fadeIn(1500);
-
-        $("a.transition").click(function(event){
-            event.preventDefault();
-            linkLocation = this.href;
-            $(".content").fadeOut(1500, loadPage); 
-
-        });
-
-        function loadPage() {
-            window.location = linkLocation;
-        }
-
-
-
         $(".two.columns").click(function()
         {
             // var img = $(this).find("a"); 
@@ -111,78 +94,96 @@
                 $('img[title="Old Skinny Man"]').css({'top': '-10px', 'left':'-5px'})
                 $('img[title="Animal Head"]').css({'width' : '140px'})
                 $('img[title="Characters"]').css({'width' : '200px'})
-                // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'}); 
+                // $('img[title="Dino"]').parent().css({'background-size': '130% 160%'});  
+
+
+                $(".content").css("display", "none");
+
+                $(".content").fadeIn(1500);
+
+                $("a.transition").click(function(event){
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $(".content").fadeOut(1500, loadPage); 
+
+                });
+
+                function loadPage() {
+                    window.location = linkLocation;
+                }
             });
-
-
 
 
             </script>
         </head>
 
 <!-- Flush the Buffer Early -->
-<?php flush(); ?>
+    <?php flush(); ?>
 
-<body>
+    <body>
 
-    <div class = "main-page">
-        <!-- header -->
-        <div class="main-header">
-            <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
-            <div class="navbar">
-                <h2><a href="skills.html">Skills</a></h2>  
-                <h2><a href="experience.html">Experience</a></h2>  
-                <h2><a href="resume.html">Resume</a></h2>  
-                <h2><a href="creativity.html" class="active">Creativity</a></h2>  
-                <h2><a href="leadership.html">Leadership</a></h2>  
+        <div class = "main-page">
+            <!-- header -->
+            <div class="main-header">
+                <h1><a href="index.html"> Jimmy Krahe  </a></h1>  
+                <div class="navbar">
+                    <h2><a href="skills.html">Skills</a></h2>  
+                    <h2><a href="experience.html">Experience</a></h2>  
+                    <h2><a href="resume.html">Resume</a></h2>  
+                    <h2><a href="creativity.html">Creativity</a></h2>  
+                    <h2><a href="leadership.html" class="active">Leadership</a></h2>  
+                </div>
             </div>
-        </div>
-        <!-- end of header -->
+            <!-- end of header -->
 
 
 
-        <!-- content -->
-        <div class="content">
-            <div class="container">
-            <h1 class="coming soon"> more coming soon...</h1>
+            <!-- content -->
+            <div class="content">
+
+
+                    <div class="container">
+                        <h1 class="coming soon"> slideshow coming soon...</h1>
+                    </div>
+
+                </div>
+
             </div>
-
-        </div>
-        <!-- end of content -->
+            <!-- end of content -->
 
 
 
 
-        <!-- footer -->
-        <div class="footer">
-            <div class="contact">
-                <a href="mailto:nhurt@cmu.edu" target="_blank">
-                    <img src="img/Footer/GM.png" width="25" height="25">
-                </a>
-                <a href="http://vimeo.com/nicolashurt" target="_blank">
-                    <img src="img/Footer/VIM.png" width="25" height="25">
-                </a>
-                <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
-                    <img src="img/Footer/LI.png" width="25" height="25">
-                </a>
-                <a href="https://www.facebook.com/jkrahe?fref=ts" target="_blank">
-                    <img src="img/Footer/fb.png" width="40" height="40">
-                </a>
+            <!-- footer -->
+            <div class="footer">
+                <div class="contact">
+                    <a href="mailto:nhurt@cmu.edu" target="_blank">
+                        <img src="img/Footer/GM.png" width="25" height="25">
+                    </a>
+                    <a href="http://vimeo.com/nicolashurt" target="_blank">
+                        <img src="img/Footer/VIM.png" width="25" height="25">
+                    </a>
+                    <a href="http://www.linkedin.com/in/nicolashurt" target="_blank">
+                        <img src="img/Footer/LI.png" width="25" height="25">
+                    </a>
+                    <a href="https://www.facebook.com/jkrahe?fref=ts" target="_blank">
+                        <img src="img/Footer/fb.png" width="40" height="40">
+                    </a>
+                </div>
+                <p>© Jimmy Krahe 2013</p>
+                <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
             </div>
-            <p>© Jimmy Krahe 2013</p>
-            <!-- <h1><a href="index.html"> Jimmy Krahe </a></h1> -->
+            <!-- end of footer -->
+
         </div>
-        <!-- end of footer -->
-
-    </div>
-    <!-- end of container unit -->
+        <!-- end of container unit -->
 
 
 
-    <!-- might not be necessary right now -->
-    <!-- <div class = "footer">
-    <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
-    </div> -->
+        <!-- might not be necessary right now -->
+        <!-- <div class = "footer">
+        <p><a href="mailto:jkrahe@andrew.cmu.edu"> <span>&copy;</span> Jimmy Krahe</a></p>
+        </div> -->
 
 <!-- end of content / hero unit-->
 
@@ -219,3 +220,12 @@ $(document).ready(function()
 
 
 </html>
+
+
+<!-- // $(".shadowbox img").hover(
+    // function() {
+        // $(this).stop().animate({"opacity": "1"}, "100");
+        // },
+        // function() {
+            // $(this).stop().animate({"opacity": "0.6"}, "100");
+            // }); -->

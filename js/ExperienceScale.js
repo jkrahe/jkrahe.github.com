@@ -7,12 +7,14 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
     $(this).css({'z-index' : '5'}); 
     $(this).animate({
         transform: 'translateX(200px) translateY(100px) scale(1.5)', 
+        backgroundColor : 'rgba(73, 102,0,1)'
     }); 
     }).mouseleave(function()
     { 
         $(this).animate({
             z:0,
-            transform: 'translateX(0px) translateY(0px) scale(1)'
+            transform: 'translateX(0px) translateY(0px) scale(1)',
+            backgroundColor : 'rgba(73, 102,0,0.2)'
         }, function(){
             $(this).css({'z-index' : '1'}); 
         });
@@ -27,12 +29,14 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
         $(this).css({'z-index' : '5'}); 
         $(this).animate({
             transform: 'translateX(-200px) translateY(100px) scale(1.5)', 
+            backgroundColor : 'rgba(73, 102,0,1)'
         });
     }).mouseleave(function()
     {
         $(this).animate({
             z:0,
-            transform: 'translateX(0px) translateY(0px) scale(1)'
+            transform: 'translateX(0px) translateY(0px) scale(1)',
+            backgroundColor : 'rgba(73, 102,0,0.2)'
         }, function(){
             $(this).css({'z-index' : '1'}); 
         });
@@ -48,12 +52,14 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
         $(this).css({'z-index' : '5'}); 
         $(this).animate({
             transform: 'translateX(200px) translateY(-100px) scale(1.5)', 
+            backgroundColor : 'rgba(73, 102,0,1)'
         }); 
     }).mouseleave(function()
     {
         $(this).animate({
             z:0,
-            transform: 'translateX(0px) translateY(0px) scale(1)'
+            transform: 'translateX(0px) translateY(0px) scale(1)',
+            backgroundColor : 'rgba(73, 102,0,0.2)'
         }, function(){
             $(this).css({'z-index' : '1'}); 
         });
@@ -72,7 +78,10 @@ var div1 = $('#experience .eight.columns.first').mouseenter(function()
             transform: 'translateX(-200px) translateY(-100px) scale(1.5)', 
             backgroundColor : 'rgba(73, 102,0,1)'
         });
-        $("html, body").animate({ scrollTop: $(this).offset().top-$(this).height() }, 500);
+        // figure out some other time
+        
+        // $("html, body").animate({ scrollTop: $(this).offset().top-($(this).height()+200)}, 500);
+        // console.log("the top of the scroll: ", $('#experience .eight.columns.fourth').offset().top-$('#experience .eight.columns.fourth').height()+100); 
 
     }).mouseleave(function()
     {

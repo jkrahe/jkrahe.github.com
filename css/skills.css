@@ -260,3 +260,12 @@ a.transition
 {
     height:200px;
 }
+
+
+.coming.soon
+{
+    color:white;
+    font-size:250%;
+    margin-top:50px;
+    margin-bottom:50px;
+}

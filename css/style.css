@@ -245,6 +245,11 @@ no extreme values used to improve smoothness of effect */
     text-align:center;
 }
 
+.footer.full
+{
+    width:960px;
+}
+
 .footer p
 {
     margin-top:10px;
