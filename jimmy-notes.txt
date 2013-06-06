@@ -1,0 +1,19 @@
+=== General Notes === 
+figure out a better color scheme
+
+=== Resume === 
+redo and use the new resume on dropbox -- NewResumeFeb13.docx is the filename
+maya needs a new logo (just don't do the folder one)
+
+
+=== Experience Page ===
+change the black on green font color on the experience page. 
+all four of the boxes have links to other sites. 
+
+=== Skills Page ===
+the pictures that are not the same should be in different boxes. 
+EVEN if they were in the same main folder 
+
+=== Updating === 
+leave detailed instructions as to how jimmy can delete and or add
+new pictures to the project. 
