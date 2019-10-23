@@ -16,7 +16,7 @@
     }
   ],
   "dependencies": {
-    "jquery": "1.5"
+    "jquery": "3.4"
   },
   "demos": [
     "http://nivogallery.dev7studios.com"
